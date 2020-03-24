@@ -1,6 +1,6 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Константин Иващенко](https://up.htmlacademy.ru/adaptive/19/user/1237687).
+* Студент: [Константин Иващенко](https://htmlacademy.ru/profile/id1237687).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
