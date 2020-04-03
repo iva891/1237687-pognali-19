@@ -1,229 +1,261 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали. Попутчики</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали. Попутчики</title>
+</head>
+
 <body>
-    <header class="page-header">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="" width="100px" height="19px" alt="Погнали">
-        </a>
-    
-        <nav class="page-nav">
-          <button type="button" class="page-nav__open">Открыть меню</button>
-          <div class="page-nav__wrapper">
-    
-            <ul class="page-nav__list page-menu">
-              <li class="page-menu__item">О сервисе</li>
-              <li class="page-menu__item">Направления</li>
-              <li class="page-menu__item">Попутчики</li>
-            </ul>
-    
-            <div class="page-nav__login-wrapper"><a href="#" class="page-nav__login-link button">Авторизация</a></div>
-    
-            <ul class="page-nav__contacts contacts-menu">
-              <li class="contacts-menu__phone"><a href="tel:+78005558628">8-800-555-86-28</a></li>
-              <li class="contacts-menu__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-            </ul>
-    
-            <ul class="page-nav__social social-link">
-              <li class="social-Link__item social-link__item--fb"><a href="#">Facebook</a></li>
-              <li class="social-Link__item social-link__item--vk"><a href="#">VK</a></li>
-              <li class="social-Link__item social-link__item--instagram"><a href="#">Instagram</a></li>
-            </ul>
-    
-            <button type="button" class="page-nav__close-button">Закрыть меню</button>
-    
-          </div>
-        </nav>
-      </header>
-    
-        <main class="companions-main">
-          <h1 class="companions-main__title first-screen__slogan first-screen__slogan--left">Попутчики</h1>
+  <header class="page-header">
+    <div class="page-header__logo logo">
+      <a href="#" class="logo__link">
+        <img class="logo__image" src="" width="100px" height="19px" alt="Погнали">
+      </a>
+    </div>
 
-          <ul class="companions-main__list user-cards">
-              <li class="user-cards__item">
-                <div class="user-cards__header">  
-                    <h2 class="user-cards__title">Таня Фирсова</h2>
-                    <p class="user-cards__rating">1,5 M</p>
-                </div>
-                  
-                  <p class="user-cards__tag-cloud">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                  
-                  <div class="user-cards__country">
-                  <p class="user-cards__text">Хочет посетить:</p>
+    <button type="button" class="page-header__open">Открыть меню</button>
 
-                  <ul class="user-cards__country-list">
-                      <li class="user-cards__country-item user-cards__country-item--">Шри-Ланка</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Таиланд</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Сейшелы</li>
-                  </ul>
-                  </div>
+    <nav class="page-header__nav page-nav">
+      <ul class="page-nav__list page-menu">
+        <li class="page-menu__item"><a href="#">О сервисе</a></li>
+        <li class="page-menu__item"><a href="#">Направления</a></li>
+        <li class="page-menu__item"><a href="#">Попутчики</a></li>
+      </ul>
+    </nav>
 
-                  <div class="user-cards__cargo">
-                      <p class="user-cards__text">Транспорт:</p>
+    <div class="page-header__login-wrapper">
+      <a href="#" class="page-header__login-link button">Авторизация</a>
+    </div>
 
-                      <ul class="user-cards__transport-list">
-                        <li class="user-cards__transport-item user-cards__transport-item--plane">Самолет</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bus">Автобус</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bike">Велосипед</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--on-foot">Пешком</li>
-                      </ul>       
+    <ul class="page-header__contacts contacts-menu">
+      <li class="contacts-menu__phone"><a href="tel:+78005558628">8-800-555-86-28</a></li>
+      <li class="contacts-menu__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+    </ul>
 
-                  </div>
+    <ul class="page-header__social social-link">
+      <li class="social-link__item social-link__item--fb"><a href="#">Facebook</a></li>
+      <li class="social-link__item social-link__item--vk"><a href="#">VK</a></li>
+      <li class="social-link__item social-link__item--instagram"><a href="#">Instagram</a></li>
+    </ul>
+  </header>
 
-                  <div class="user-cards__rating">
-                      <p class="user-cards__text user-cards__text--rating">Левел:</p>
-                      <p class="user-cards__rating-value">99</p>
-                  </div>
+  <main class="companions-main">
+    <h1 class="companions-main__title first-screen__slogan first-screen__slogan--left">Попутчики</h1>
 
-                  <button type="button" class="user-cards__call button">Позвать!</button>
+    <section class="companions-main__list">
+      <article class="companions-main__item user-card">
+        <div class="user-card__header">
+          <h2 class="user-card__title">Таня Фирсова</h2>
+          <p class="user-card__rating">1,5 M</p>
+        </div>
 
-              </li>
+        <ul class="user-card__tags tag-cloud">
+          <li class="tag-cloud__item"><a href="#">#ЗОЖ</a></li>
+          <li class="tag-cloud__item"><a href="#">#ПП</a></li>
+          <li class="tag-cloud__item"><a href="#">#Фитнес</a></li>
+          <li class="tag-cloud__item"><a href="#">#пляж</a></li>
+          <li class="tag-cloud__item"><a href="#">#авокадо</a></li>
+          <li class="tag-cloud__item"><a href="#">#смузи</a></li>
+        </ul>
 
-              <li class="user-cards__item">
-                <div class="user-cards__header">  
-                    <h2 class="user-cards__title">Петя Демин</h2>
-                    <p class="user-cards__rating">1500</p>
-                </div>
-                  
-                  <p class="user-cards__tag-cloud">#бургер #бар #футбол #концерт #крафт</p>
-                  
-                  <div class="user-cards__country">
-                  <p class="user-cards__text">Хочет посетить:</p>
 
-                  <ul class="user-cards__country-list">
-                      <li class="user-cards__country-item user-cards__country-item--">Бельгия</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Чехия</li>
-                  </ul>
-                  </div>
+        <div class="user-card__country direction">
+          <p class="direction__text user-card__text">Хочет посетить:</p>
 
-                  <div class="user-cards__cargo">
-                      <p class="user-cards__text">Транспорт:</p>
+          <ul class="direction__country-list">
+            <li class="direction__country-item direction__country-item--sri-lanka">Шри-Ланка</li>
+            <li class="direction__country-item direction__country-item--thailand">Таиланд</li>
+            <li class="direction__country-item direction__country-item--seychelles">Сейшелы</li>
+          </ul>
+        </div>
 
-                      <ul class="user-cards__transport-list">
-                        <li class="user-cards__transport-item user-cards__transport-item--plane">Самолет</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bus">Автобус</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bike">Велосипед</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--on-foot">Пешком</li>
-                      </ul>        
+        <div class="user-card__cargo transfer">
+          <p class="transfer__text user-card__text">Транспорт:</p>
 
-                  </div>
-
-                  <div class="user-cards__rating">
-                      <p class="user-cards__text user-cards__text--rating">Левел:</p>
-                      <p class="user-cards__rating-value">80</p>
-                  </div>
-
-                  <button type="button" class="user-cards__call button">Позвать!</button>
-
-              </li>
-
-              <li class="user-cards__item">
-                <div class="user-cards__header">  
-                    <h2 class="user-cards__title">Марк Смолов</h2>
-                    <p class="user-cards__rating">170</p>
-                </div>
-                  
-                  <p class="user-cards__tag-cloud">#рэп #тату #хайпбист #кроссовки #суприм</p>
-                  
-                  <div class="user-cards__country">
-                  <p class="user-cards__text">Хочет посетить:</p>
-
-                  <ul class="user-cards__country-list">
-                      <li class="user-cards__country-item user-cards__country-item--">США</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Австралия</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Доминика</li>
-                  </ul>
-                  </div>
-
-                  <div class="user-cards__cargo">
-                      <p class="user-cards__text">Транспорт:</p>
-
-                      <ul class="user-cards__transport-list">
-                        <li class="user-cards__transport-item user-cards__transport-item--plane">Самолет</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bus">Автобус</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bike">Велосипед</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--on-foot">Пешком</li>
-                      </ul>     
-
-                  </div>
-
-                  <div class="user-cards__rating">
-                      <p class="user-cards__text user-cards__text--rating">Левел:</p>
-                      <p class="user-cards__rating-value">25</p>
-                  </div>
-
-                  <button type="button" class="user-cards__call button">Позвать!</button>
-
-              </li>
-
-              <li class="user-cards__item">
-                <div class="user-cards__header">  
-                    <h2 class="user-cards__title">Лариса Роговая</h2>
-                    <p class="user-cards__rating">23</p>
-                </div>
-                  
-                  <p class="user-cards__tag-cloud">#образование #карьера#учеба #линкедин</p>
-                  
-                  <div class="user-cards__country">
-                  <p class="user-cards__text">Хочет посетить:</p>
-
-                  <ul class="user-cards__country-list">
-                      <li class="user-cards__country-item user-cards__country-item--">Великобритания</li>
-                      <li class="user-cards__country-item user-cards__country-item--">Германия</li>
-                  </ul>
-
-                  </div>
-
-                  <div class="user-cards__cargo">
-                      <p class="user-cards__text">Транспорт:</p>
-
-                      <ul class="user-cards__transport-list">
-                        <li class="user-cards__transport-item user-cards__transport-item--plane">Самолет</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bus">Автобус</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--bike">Велосипед</li>
-                        <li class="user-cards__transport-item user-cards__transport-item--on-foot">Пешком</li>
-                      </ul>        
-
-                  </div>
-
-                  <div class="user-cards__rating">
-                      <p class="user-cards__text user-cards__text--rating">Левел:</p>
-                      <p class="user-cards__rating-value">50</p>
-                  </div>
-
-                  <button type="button" class="user-cards__call button">Позвать!</button>
-
-              </li>
+          <ul class="transfer__list">
+            <li class="transfer__item transfer__item--plane">Самолет</li>
+            <li class="transfer__item transfer__item--bus">Автобус</li>
+            <li class="transfer__item transfer__item--bike">Велосипед</li>
+            <li class="transfer__item transfer__item--on-foot">Пешком</li>
           </ul>
 
-          <div class="companions-main__show-more"><a href="#">Показать еще</a></div>
-
-          <div class="companions-main__nav">
-              <div class="companions-main__nav-item companions-main__nav-item-prev">Назад</div>
-              <div class="companions-main__nav-item companions-main__nav-item-next">Вперед</div>
-          </div>
-
-      </main>
-
-      <footer class="page-footer">
-        <a href="#" class="page-footer__logo">
-          <img src="" width="100px" height="19px" alt="Погнали">
-        </a>
-    
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item page-footer__social-item--fb"><a href="#">Facebook</a></li>
-          <li class="page-footer__social-item page-footer__social-item--vk"><a href="#">VK</a></li>
-          <li class="page-footer__social-item page-footer__social-item--instagram"><a href="#">Instagram</a></li>
-        </ul>
-    
-        <p class="page-footer__text">Разработано</p>
-        <div class="page-footer__htmlacademy-logo">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" width="27" height="34"
-              alt="Разработано в Htmlacademy"></a>
         </div>
-      </footer>
+
+        <div class="user-card__level rank">
+          <p class="rank__text user-card__text">Левел:</p>
+          <p class="rank__value">99</p>
+        </div>
+
+        <button type="button" class="user-card__call button">Позвать!</button>
+
+      </article>
+
+      <article class="companions-main__item user-card">
+        <div class="user-card__header">
+          <h2 class="user-card__title">Петя Демин</h2>
+          <p class="user-card__rating">1500</p>
+        </div>
+
+        <ul class="user-card__tags tag-cloud">
+          <li class="tag-cloud__item"><a href="#">#бургер</a></li>
+          <li class="tag-cloud__item"><a href="#">#бар</a></li>
+          <li class="tag-cloud__item"><a href="#">#футбол</a></li>
+          <li class="tag-cloud__item"><a href="#">#концерт</a></li>
+          <li class="tag-cloud__item"><a href="#">#крафт</a></li>
+        </ul>
+
+
+        <div class="user-card__country direction">
+          <p class="direction__text user-card__text">Хочет посетить:</p>
+
+          <ul class="direction__country-list">
+            <li class="direction__country-item direction__country-item--belgium">Бельгия</li>
+            <li class="direction__country-item direction__country-item--czech">Чехия</li>
+          </ul>
+        </div>
+
+        <div class="user-card__cargo transfer">
+          <p class="transfer__text user-card__text">Транспорт:</p>
+
+          <ul class="transfer__list">
+            <li class="transfer__item transfer__item--plane">Самолет</li>
+            <li class="transfer__item transfer__item--bus">Автобус</li>
+            <li class="transfer__item transfer__item--bike">Велосипед</li>
+            <li class="transfer__item transfer__item--on-foot">Пешком</li>
+          </ul>
+
+        </div>
+
+        <div class="user-card__level rank">
+          <p class="rank__text user-card__text">Левел:</p>
+          <p class="rank__value">80</p>
+        </div>
+
+        <button type="button" class="user-card__call button">Позвать!</button>
+
+      </article>
+
+      <article class="companions-main__item user-card">
+        <div class="user-card__header">
+          <h2 class="user-card__title">Марк Смолов</h2>
+          <p class="user-card__rating">170</p>
+        </div>
+
+        <p class="user-card__tag-cloud">#рэп #тату #хайпбист #кроссовки #суприм</p>
+        <ul class="user-card__tags tag-cloud">
+          <li class="tag-cloud__item"><a href="#">#рэп</a></li>
+          <li class="tag-cloud__item"><a href="#">#тату</a></li>
+          <li class="tag-cloud__item"><a href="#">#хайпбист</a></li>
+          <li class="tag-cloud__item"><a href="#">#кроссовки</a></li>
+          <li class="tag-cloud__item"><a href="#">#суприм</a></li>
+        </ul>
+
+
+        <div class="user-card__country direction">
+          <p class="direction__text user-card__text">Хочет посетить:</p>
+
+          <ul class="direction__country-list">
+            <li class="direction__country-item direction__country-item--">США</li>
+            <li class="direction__country-item direction__country-item--">Австралия</li>
+            <li class="direction__country-item direction__country-item--">Доминика</li>
+          </ul>
+        </div>
+
+        <div class="user-card__cargo transfer">
+          <p class="transfer__text user-card__text">Транспорт:</p>
+
+          <ul class="transfer__list">
+            <li class="transfer__item transfer__item--plane">Самолет</li>
+            <li class="transfer__item transfer__item--bus">Автобус</li>
+            <li class="transfer__item transfer__item--bike">Велосипед</li>
+            <li class="transfer__item transfer__item--on-foot">Пешком</li>
+          </ul>
+
+        </div>
+
+        <div class="user-card__level rank">
+          <p class="rank__text user-card__text">Левел:</p>
+          <p class="rank__value">25</p>
+        </div>
+
+        <button type="button" class="user-card__call button">Позвать!</button>
+
+      </article>
+
+      <article class="companions-main__item user-card">
+        <div class="user-card__header">
+          <h2 class="user-card__title">Лариса Роговая</h2>
+          <p class="user-card__rating">23</p>
+        </div>
+
+        <ul class="user-card__tags tag-cloud">
+          <li class="tag-cloud__item"><a href="#">#образование</a></li>
+          <li class="tag-cloud__item"><a href="#">#карьера</a></li>
+          <li class="tag-cloud__item"><a href="#">#учеба</a></li>
+          <li class="tag-cloud__item"><a href="#">#линкедин</a></li>
+        </ul>
+
+        <div class="user-card__country direction">
+          <p class="direction__text user-card__text">Хочет посетить:</p>
+
+          <ul class="direction__country-list">
+            <li class="direction__country-item direction__country-item--">Великобритания</li>
+            <li class="direction__country-item direction__country-item--">Германия</li>
+          </ul>
+
+        </div>
+
+        <div class="user-card__cargo transfer">
+          <p class="transfer__text user-card__text">Транспорт:</p>
+
+          <ul class="transfer__list">
+            <li class="transfer__item transfer__item--plane">Самолет</li>
+            <li class="transfer__item transfer__item--bus">Автобус</li>
+            <li class="transfer__item transfer__item--bike">Велосипед</li>
+            <li class="transfer__item transfer__item--on-foot">Пешком</li>
+          </ul>
+
+        </div>
+
+        <div class="user-card__level rank">
+          <p class="rank__text user-card__text">Левел:</p>
+          <p class="rank__value">50</p>
+        </div>
+
+        <button type="button" class="user-card__call button">Позвать!</button>
+
+      </article>
+    </section>
+
+    <div class="companions-main__show-more"><a href="#">Показать еще</a></div>
+
+    <div class="companions-main__nav arrows">
+      <div class="arrows__item arrows__item--prev">Назад</div>
+      <div class="arrows__item arrows__item--next">Вперед</div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__logo logo">
+      <a href="#" class="logo__link">
+        <img class="logo__image logo__image--dark" src="" width="100px" height="19px" alt="Погнали">
+      </a>
+    </div>
+
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item social-list__item--fb"><a href="#">Facebook</a></li>
+      <li class="social-list__item social-list__item--vk"><a href="#">VK</a></li>
+      <li class="social-list__item social-list__item--instagram"><a href="#">Instagram</a></li>
+    </ul>
+
+    <p class="page-footer__text">Разработано</p>
+    <div class="page-footer__htmlacademy-logo">
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" width="27" height="34"
+          alt="Разработано в Htmlacademy"></a>
+    </div>
+  </footer>
 </body>
+
 </html>
