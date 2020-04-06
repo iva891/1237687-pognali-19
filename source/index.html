@@ -6,18 +6,18 @@
   <title>HTML Academy: Погнали</title>
 </head>
 
-<body>
+<body class="page">
 
-  <header class="page-header">
-    <div class="page-header__logo logo">
+  <header class="page__header header">
+    <div class="header__logo logo">
       <a href="#" class="logo__link">
         <img class="logo__image" src="" width="100px" height="19px" alt="Погнали">
       </a>
     </div>
 
-    <button type="button" class="page-header__open">Открыть меню</button>
+    <button type="button" class="header__open">Открыть меню</button>
 
-    <nav class="page-header__nav page-nav">
+    <nav class="header__nav page-nav">
       <ul class="page-nav__list page-menu">
         <li class="page-menu__item"><a href="#">О сервисе</a></li>
         <li class="page-menu__item"><a href="#">Направления</a></li>
@@ -25,26 +25,26 @@
       </ul>
     </nav>
 
-    <div class="page-header__login-wrapper">
-      <a href="#" class="page-header__login-link button">Авторизация</a>
+    <div class="header__login-wrapper">
+      <a href="#" class="header__login-link button">Авторизация</a>
     </div>
 
-    <ul class="page-header__contacts contacts-menu">
+    <ul class="header__contacts contacts-menu">
       <li class="contacts-menu__phone"><a href="tel:+78005558628">8-800-555-86-28</a></li>
       <li class="contacts-menu__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
     </ul>
 
-    <ul class="page-header__social social-link">
+    <ul class="header__social social-link">
       <li class="social-link__item social-link__item--fb"><a href="#">Facebook</a></li>
       <li class="social-link__item social-link__item--vk"><a href="#">VK</a></li>
       <li class="social-link__item social-link__item--instagram"><a href="#">Instagram</a></li>
     </ul>
   </header>
 
-  <main class="page-main">
+  <main class="page__main main">
     <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий</h1>
 
-    <section class="first-screen">
+    <section class="main__hallo first-screen">
       <p class="first-screen__slogan">В путешествие с крутыми попутчиками!</p>
 
       <ul class="first-screen__menu login-list">
@@ -57,7 +57,7 @@
       <p class="first-screen__quote-author">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</p>
     </section>
 
-    <section class="road-map">
+    <section class="main__list road-map">
       <ol class="road-map__list">
         <li class="road-map__item road-map__item--first">Выберите направление</li>
         <li class="road-map__item road-map__item--second">Изучите идеи путешественников</li>
@@ -66,7 +66,7 @@
       </ol>
     </section>
 
-    <section class="about">
+    <section class="main__about-service about">
       <div class="about__content lead">
         <h2 class="lead__title">О сервисе</h2>
         <p class="lead__base-text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
@@ -75,7 +75,7 @@
       </div>
     </section>
 
-    <section class="direction">
+    <section class="main__country direction">
       <div class="direction__content lead">
         <h2 class="lead__title">Направления</h2>
         <p class="lead__base-text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
@@ -111,7 +111,7 @@
       <a href="#" class="direction__show-all button">Показать все</a>
     </section>
 
-    <section class="people">
+    <section class="main__our-user people">
 
       <div class="people__content lead">
         <h2 class="lead__title">Попутчики</h2>
@@ -190,7 +190,7 @@
 
     </section>
 
-    <section class="price">
+    <section class="main__cost price">
       <h2 class="price__title">Добавьте свой профиль</h2>
 
       <ol class="price__list tariff">
@@ -213,7 +213,7 @@
       <a href="#" class="price__show-business">Показать тарифы для бизнеса</a>
     </section>
 
-    <section class="registration">
+    <section class="main__login registration">
 
       <div class="registration__content lead">
         <h2 class="lead__title lead__title--center">Заинтересовались?</h2>
@@ -236,7 +236,7 @@
       </ul>
     </section>
 
-    <section class="address">
+    <section class="main__place address">
       <h2 class="visually-hidden">Адрес</h2>
       <p class="address__place">ул. Большая Конюшенная, 19/8</p>
       <a href="#" class="address__route button">Проложить маршрут</a>
@@ -244,24 +244,24 @@
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__logo logo">
+  <footer class="page__footer footer">
+    <div class="footer__logo logo">
       <a href="#" class="logo__link">
         <img class="logo__image logo__image--dark" src="" width="100px" height="19px" alt="Погнали">
       </a>
     </div>
 
-    <ul class="page-footer__social social-list">
+    <ul class="footer__social social-list">
       <li class="social-list__item social-list__item--fb"><a href="#">Facebook</a></li>
       <li class="social-list__item social-list__item--vk"><a href="#">VK</a></li>
       <li class="social-list__item social-list__item--instagram"><a href="#">Instagram</a></li>
     </ul>
 
-    <p class="page-footer__text">Разработано</p>
-    <div class="page-footer__htmlacademy-logo">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" width="27" height="34"
-          alt="Разработано в Htmlacademy"></a>
-    </div>
+    <p class="footer__text">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo"><img src="" width="27"
+          height="34" alt="Разработано в Htmlacademy"></a>
+    </p>
   </footer>
 </body>
 

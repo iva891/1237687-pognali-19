@@ -6,18 +6,18 @@
   <title>HTML Academy: Погнали</title>
 </head>
 
-<body>
+<body class="page">
 
-  <header class="page-header">
-    <div class="page-header__logo logo">
+  <header class="page__header header">
+    <div class="header__logo logo">
       <a href="#" class="logo__link">
-        <img class="logo__image" src="" width="100px" height="19px" alt="Погнали">
+        <img class="logo__image" src="#" width="100px" height="19px" alt="Погнали">
       </a>
     </div>
 
-    <button type="button" class="page-header__open">Открыть меню</button>
+    <button type="button" class="header__open">Открыть меню</button>
 
-    <nav class="page-header__nav page-nav">
+    <nav class="header__nav page-nav">
       <ul class="page-nav__list page-menu">
         <li class="page-menu__item"><a href="#">О сервисе</a></li>
         <li class="page-menu__item"><a href="#">Направления</a></li>
@@ -25,40 +25,351 @@
       </ul>
     </nav>
 
-    <div class="page-header__login-wrapper">
-      <a href="#" class="page-header__login-link button">Авторизация</a>
+    <div class="header__login-wrapper">
+      <a href="#" class="header__login-link button">Авторизация</a>
     </div>
 
-    <ul class="page-header__contacts contacts-menu">
+    <ul class="header__contacts contacts-menu">
       <li class="contacts-menu__phone"><a href="tel:+78005558628">8-800-555-86-28</a></li>
       <li class="contacts-menu__email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
     </ul>
 
-    <ul class="page-header__social social-link">
+    <ul class="header__social social-link">
       <li class="social-link__item social-link__item--fb"><a href="#">Facebook</a></li>
       <li class="social-link__item social-link__item--vk"><a href="#">VK</a></li>
       <li class="social-link__item social-link__item--instagram"><a href="#">Instagram</a></li>
     </ul>
   </header>
 
-  <footer class="page-footer">
-    <div class="page-footer__logo logo">
+  <main class="page__main direction-main">
+    <h1 class="direction-main__title first-screen__slogan first-screen__slogan--left">Направления</h1>
+    <section class="direction-main__user-data user-data">
+      <div class="user-data__rating">
+        <p class="user-data__level-value">80</p>
+        <p class="user-data__level-text">level</p>
+      </div>
+
+      <ul class="user-data__user-tag user-tag">
+        <li class="user-tag__item"><a href="#">#ЗОЖ</a></li>
+        <li class="user-tag__item"><a href="#">#ПП</a></li>
+        <li class="user-tag__item"><a href="#">#Фитнес</a></li>
+        <li class="user-tag__item"><a href="#">#пляж</a></li>
+        <li class="user-tag__item"><a href="#">#авокадо</a></li>
+        <li class="user-tag__item"><a href="#">#смузи</a></li>
+      </ul>
+
+      <ul class="user-data__user-cargo user-cargo">
+        <li class="user-cargo__item user-cargo__item--plane">Самолет</li>
+        <li class="user-cargo__item user-cargo__item--bus">Автобус</li>
+        <li class="user-cargo__item user-cargo__item--bike">Велосипед</li>
+        <li class="user-cargo__item user-cargo__item--on-foot">Пешком</li>
+      </ul>
+
+    </section>
+
+    <section class="direction-main__my-plan my-plan">
+      <h2 class="my-plan__title">Мои планы</h2>
+      <ol class="my-plan__list">
+        <li class="my-plan__plan-card plan-card">
+          <p class="plan-card__country">Франция, Италия</p>
+          <p class="plan-card__people">3 попутчика</p>
+          <p class="plan-card__date">26 мар - 29 мар</p>
+          <p class="plan-card__change"><a href="#" class="plan-card__link">Изменить</a></p>
+        </li>
+
+        <li class="my-plan__plan-card plan-card">
+          <p class="plan-card__country">Таиланд, Индонезия</p>
+          <p class="plan-card__people">1 попутчик</p>
+          <p class="plan-card__date">1 июл - 15 июл</p>
+          <p class="plan-card__change"><a href="#" class="plan-card__link">Изменить</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="direction-main__add-plan add-plan">
+      <h2 class="add-plan__title">Добавить план</h2>
+
+      <form action="https://echo.htmlacademy.ru" method="get" class="add-plan__form">
+
+        <fieldset class="add-plan__step first-step">
+          <div class="first-step__wrapper">
+            <h3 class="add-plan__title-step">Шаг 1. Даты пребывания</h3>
+            <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в
+              поездку и ее предполагаемую длительность.</p>
+            <input type="number" id="people" class="first-step__people" value="2">
+            <label for="people" class="first-step__text">Ищу попутчиков <span
+                class="first-step__text first-step__text--light">Чел.</span> </label>
+            <input type="number" id="time" class="first-step__time" value="2">
+            <label for="time" class="first-step__text">Длительность<span
+                class="first-step__text first-step__text--light">Дн.</span> </label>
+            <input type="checkbox" id="child" class="first-step__child">
+            <label for="child" class="first-step__child-text">Можно с детьми</label>
+
+            <div class="first-step__month">
+              <p class="first-step__month-text">Март 2019</p>
+            </div>
+
+            <div class="first-step__calendar calendar">
+              <ul class="calendar__week">
+                <li class="calendar__day-week">п</li>
+                <li class="calendar__day-week">в</li>
+                <li class="calendar__day-week">с</li>
+                <li class="calendar__day-week">ч</li>
+                <li class="calendar__day-week">п</li>
+                <li class="calendar__day-week calendar__day-week--weekend">с</li>
+                <li class="calendar__day-week calendar__day-week--weekend">в</li>
+              </ul>
+
+              <ul>
+                <li><input type="checkbox" class="calendar__number" id="np23"><label for="np23"
+                    class="calendar__number-text">23</label></li>
+                <li><input type="checkbox" class="calendar__number" id="np24"><label for="np24"
+                    class="calendar__number-text">24</label></li>
+                <li><input type="checkbox" class="calendar__number" id="np25"><label for="np25"
+                    class="calendar__number-text">25</label></li>
+                <li><input type="checkbox" class="calendar__number" id="np26"><label for="np26"
+                    class="calendar__number-text">26</label></li>
+                <li><input type="checkbox" class="calendar__number" id="np27"><label for="np27"
+                    class="calendar__number-text">27</label></li>
+                <li><input type="checkbox" class="calendar__number" id="np28"><label for="np28"
+                    class="calendar__number-text">28</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n1"><label for="n1"
+                    class="calendar__number-text">1</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n2"><label for="n2"
+                    class="calendar__number-text">2</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n3"><label for="n3"
+                    class="calendar__number-text">3</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n4"><label for="n4"
+                    class="calendar__number-text">4</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n5"><label for="n5"
+                    class="calendar__number-text">5</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n6"><label for="n6"
+                    class="calendar__number-text">6</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n7"><label for="n7"
+                    class="calendar__number-text">7</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n8"><label for="n8"
+                    class="calendar__number-text">8</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n9"><label for="n9"
+                    class="calendar__number-text">9</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n10"><label for="n10"
+                    class="calendar__number-text">10</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n11"><label for="n11"
+                    class="calendar__number-text">11</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n12"><label for="n12"
+                    class="calendar__number-text">12</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n13"><label for="n13"
+                    class="calendar__number-text">13</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n14"><label for="n14"
+                    class="calendar__number-text">14</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n15"><label for="n15"
+                    class="calendar__number-text">15</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n16"><label for="n16"
+                    class="calendar__number-text">16</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n17"><label for="n17"
+                    class="calendar__number-text">17</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n18"><label for="n18"
+                    class="calendar__number-text">18</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n19"><label for="n19"
+                    class="calendar__number-text">19</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n20"><label for="n20"
+                    class="calendar__number-text">20</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n21"><label for="n21"
+                    class="calendar__number-text">21</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n22"><label for="n22"
+                    class="calendar__number-text">22</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n23"><label for="n23"
+                    class="calendar__number-text">23</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n24"><label for="n24"
+                    class="calendar__number-text">24</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n25"><label for="n25"
+                    class="calendar__number-text">25</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n26"><label for="n26"
+                    class="calendar__number-text">26</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n27"><label for="n27"
+                    class="calendar__number-text">27</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n28"><label for="n28"
+                    class="calendar__number-text">28</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n29"><label for="n29"
+                    class="calendar__number-text">29</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n30"><label for="n30"
+                    class="calendar__number-text">30</label></li>
+                <li><input type="checkbox" class="calendar__number" id="n31"><label for="n31"
+                    class="calendar__number-text">31</label></li>
+                <li><input type="checkbox" class="calendar__number" id="nn1"><label for="nn1"
+                    class="calendar__number-text">1</label></li>
+                <li><input type="checkbox" class="calendar__number" id="nn2"><label for="nn2"
+                    class="calendar__number-text">2</label></li>
+                <li><input type="checkbox" class="calendar__number" id="nn3"><label for="nn3"
+                    class="calendar__number-text">3</label></li>
+                <li><input type="checkbox" class="calendar__number" id="nn4"><label for="nn4"
+                    class="calendar__number-text">4</label></li>
+                <li><input type="checkbox" class="calendar__number" id="nn5"><label for="nn5"
+                    class="calendar__number-text">5</label></li>
+              </ul>
+
+              <div class="calendar__next-step"><a href="#" class="button">Следующий шаг</a></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="add-plan__step second-step">
+          <div class="second-step__wrapper">
+            <h3 class="add-plan__title-step">Шаг 2. Маршрут</h3>
+            <p class="add-plan__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
+              несколько.</p>
+
+            <input type="text" id="first-country" class="second-step__country-input second-step__country-input--bosnia">
+            <label for="first-country"
+              class="second-step__country-input-text second-step__country-input-text--bosnia">Босния и
+              Герцеговина</label>
+            <input type="text" id="second-country" class="second-step__country-input second-step__country-input--czech">
+            <label for="second-country"
+              class="second-step__country-input-text second-step__country-input-text--czech">Чехия</label>
+            <input type="text" id="third-country" class="second-step__country-input second-step__country-input--choose">
+            <label for="third-country"
+              class="second-step__country-input-text second-step__country-input-text--choose">Выберите страну</label>
+
+            <div class="second-step__country-choice country-choice">
+              <h3 class="country-choice__title">Выберите страну</h3>
+
+              <ul class="country-choice__country-list country-list">
+                <li class="country-list__item"><input type="radio" id="letter1" class="country-list__input"><label
+                    for="letter1" class="country-list__text">а</label></li>
+                <li class="country-list__item"><input type="radio" id="letter2" class="country-list__input"><label
+                    for="letter2" class="country-list__text">б</label></li>
+                <li class="country-list__item"><input type="radio" id="letter3" class="country-list__input"><label
+                    for="letter3" class="country-list__text">в< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter4" class="country-list__input"><label
+                    for="letter4" class="country-list__text">г< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter5" class="country-list__input"><label
+                    for="letter5" class="country-list__text">д< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter6" class="country-list__input"><label
+                    for="letter6" class="country-list__text">е< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter7" class="country-list__input"><label
+                    for="letter7" class="country-list__text">з< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter8" class="country-list__input"><label
+                    for="letter8" class="country-list__text">и< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter9" class="country-list__input"><label
+                    for="letter9" class="country-list__text">к< label>
+                </li>
+                <li class="country-list__item"><input type="radio" id="letter10" class="country-list__input"><label
+                    for="letter10" class="country-list__text">л</label></li>
+                <li class="country-list__item"><input type="radio" id="letter11" class="country-list__input"><label
+                    for="letter11" class="country-list__text">м</label></li>
+                <li class="country-list__item"><input type="radio" id="letter12" class="country-list__input"><label
+                    for="letter12" class="country-list__text">н</label></li>
+                <li class="country-list__item"><input type="radio" id="letter13" class="country-list__input"><label
+                    for="letter13" class="country-list__text">о</label></li>
+                <li class="country-list__item"><input type="radio" id="letter14" class="country-list__input"><label
+                    for="letter14" class="country-list__text">п</label></li>
+                <li class="country-list__item"><input type="radio" id="letter15" class="country-list__input"><label
+                    for="letter15" class="country-list__text">р</label></li>
+                <li class="country-list__item"><input type="radio" id="letter16" class="country-list__input"><label
+                    for="letter16" class="country-list__text">с</label></li>
+                <li class="country-list__item"><input type="radio" id="letter17" class="country-list__input"><label
+                    for="letter17" class="country-list__text">т</label></li>
+                <li class="country-list__item"><input type="radio" id="letter18" class="country-list__input"><label
+                    for="letter18" class="country-list__text">у</label></li>
+                <li class="country-list__item"><input type="radio" id="letter19" class="country-list__input"><label
+                    for="letter19" class="country-list__text">ф</label></li>
+                <li class="country-list__item"><input type="radio" id="letter20" class="country-list__input"><label
+                    for="letter20" class="country-list__text">х</label></li>
+                <li class="country-list__item"><input type="radio" id="letter21" class="country-list__input"><label
+                    for="letter21" class="country-list__text">ч</label></li>
+                <li class="country-list__item"><input type="radio" id="letter22" class="country-list__input"><label
+                    for="letter22" class="country-list__text">ш</label></li>
+                <li class="country-list__item"><input type="radio" id="letter23" class="country-list__input"><label
+                    for="letter23" class="country-list__text">э</label></li>
+                <li class="country-list__item"><input type="radio" id="letter24" class="country-list__input"><label
+                    for="letter24" class="country-list__text">ю</label></li>
+                <li class="country-list__item"><input type="radio" id="letter25" class="country-list__input"><label
+                    for="letter25" class="country-list__text">я</label></li>
+              </ul>
+
+              <ul class="country-choice__alphabet-country alphabet-country">
+                <li class="alphabet-country__item"><input type="radio" id="alphabet1" name="country"
+                    class="alphabet-country__input"><label for="alphabet1"
+                    class="alphabet-country__text">Австралия</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet2" name="country"
+                    class="alphabet-country__input"><label for="alphabet2"
+                    class="alphabet-country__text">Австрия</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet3" name="country"
+                    class="alphabet-country__input"><label for="alphabet3"
+                    class="alphabet-country__text">Азербайджан</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet4" name="country"
+                    class="alphabet-country__input"><label for="alphabet4"
+                    class="alphabet-country__text">Албания</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet5" name="country"
+                    class="alphabet-country__input"><label for="alphabet5" class="alphabet-country__text">Алжир</label>
+                </li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet6" name="country"
+                    class="alphabet-country__input"><label for="alphabet6" class="alphabet-country__text">Ангола</label>
+                </li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet7" name="country"
+                    class="alphabet-country__input"><label for="alphabet7"
+                    class="alphabet-country__text">Андорра</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet8" name="country"
+                    class="alphabet-country__input"><label for="alphabet8" class="alphabet-country__text">Антигуа и
+                    Барбуда</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet9" name="country"
+                    class="alphabet-country__input"><label for="alphabet9"
+                    class="alphabet-country__text">Аргентина</label></li>
+                <li class="alphabet-country__item"><input type="radio" id="alphabet10" name="country"
+                    class="alphabet-country__input"><label for="alphabet10"
+                    class="alphabet-country__text">Армения</label></li>
+              </ul>
+            </div>
+
+            <button type="button" class="second-step__add-country">Добавить страну</button>
+            <div class="calendar__next-step"><a href="#" class="button">Следующий шаг</a></div>
+            <div class="calendar__previous-step"><a href="#">На шаг назад</a></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="add-plan__step third-step">
+          <div class="third-step__wrapper">
+            <h3 class="add-plan__title-step">Шаг 3. Развлечения</h3>
+            <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной
+              форме и ставить тэги.</p>
+            <p class="third-step__textarea-title third-step__textarea-title--bosnia">Босния и Герцеговина</p>
+            <textarea name="first-country" cols="30" rows="10">План действий</textarea>
+            <p class="third-step__textarea-title third-step__textarea-title--czech">Чехия</p>
+            <textarea name="second-country" cols="30"
+              rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          </div>
+          <button type="submit" class="third-step__submit button">Отправить</button>
+          <div class="third-step__previous-step"><a href="#">На шаг назад</a></div>
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="footer__logo logo">
       <a href="#" class="logo__link">
         <img class="logo__image logo__image--dark" src="" width="100px" height="19px" alt="Погнали">
       </a>
     </div>
 
-    <ul class="page-footer__social social-list">
+    <ul class="footer__social social-list">
       <li class="social-list__item social-list__item--fb"><a href="#">Facebook</a></li>
       <li class="social-list__item social-list__item--vk"><a href="#">VK</a></li>
       <li class="social-list__item social-list__item--instagram"><a href="#">Instagram</a></li>
     </ul>
 
-    <p class="page-footer__text">Разработано</p>
-    <div class="page-footer__htmlacademy-logo">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" width="27" height="34"
-          alt="Разработано в Htmlacademy"></a>
-    </div>
+    <p class="footer__text">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo"><img src="" width="27"
+          height="34" alt="Разработано в Htmlacademy"></a>
+    </p>
   </footer>
 </body>
 
