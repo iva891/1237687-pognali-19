@@ -1,0 +1,48 @@
+.price {
+  background-color: @dark-blue-grey;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  .center;
+  background-color: @pale-grey;
+  border-radius: 0 0 30px 30px;
+}
+
+.price__list {
+  margin-top: 40px;
+}
+
+.price__title-wrapper {
+  width: 270px;
+  .center;
+}
+
+.price__title {
+  position: relative;
+  width: 110px;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.price__title::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 150px;
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/rates@1x.png");
+  background-size: 100%;
+}
+
+.price__show-business {
+  margin-top: 31px;
+  margin-bottom: 38px;
+  .center;
+
+  font-family: "BloggersansBold", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: @dark-blue-grey;
+}

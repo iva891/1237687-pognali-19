@@ -1,0 +1,78 @@
+.tariff__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 244px;
+  .center;
+}
+
+.tariff__wrapper {
+  width: 200px;
+  min-height: 65px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid @white-six;
+}
+
+.tariff__wrapper--last {
+  border-bottom: 1px solid @white-six;
+}
+
+.tariff__item--one::after {
+  content: "1";
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: @mango-three;
+  text-align: center;
+  line-height: 34px;
+
+  font-family: "Bloggersans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: @white-four;
+}
+
+.tariff__item--two::after {
+  content: "2";
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: @mango-two;
+  text-align: center;
+  line-height: 34px;
+
+  font-family: "Bloggersans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: @white-four;
+}
+
+.tariff__item--three::after {
+  content: "3";
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: @light-gold;
+  text-align: center;
+  line-height: 34px;
+
+  font-family: "Bloggersans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: @white-four;
+}
+
+.tariff__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "BloggersansLight", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: @greyish-brown;
+}
+
+.tariff__text--top {
+  padding-top: 14px;
+}
+
+.tariff__text--bottom {
+  padding-bottom: 14px;
+}
