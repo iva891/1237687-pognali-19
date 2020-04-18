@@ -3,15 +3,14 @@
   flex-direction: column;
 
   min-height: 360px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   background-color: @dark-blue-grey;
 }
 
 .road-map__list {
-  width: 270px;
   margin-top: -70px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 40px;
 }
 
@@ -26,9 +25,6 @@
 
 .road-map__item-text {
   width: 150px;
-  font-family: "BloggersansBold", "Arial", sans-serif;
-  font-size: 18px;
-  color: @dark-two;
 }
 
 .road-map__item--first {
@@ -50,28 +46,20 @@
 
 .road-map__item--first::after {
   content: "1";
-  font-family: "BloggersansBold", "Arial", sans-serif;
-  font-size: 18px;
-  color: @white-four;
+  .text-10;
 }
 
 .road-map__item--second::after {
   content: "2";
-  font-family: "BloggersansBold", "Arial", sans-serif;
-  font-size: 18px;
-  color: @white-four;
+  .text-10;
 }
 
 .road-map__item--third::after {
   content: "3";
-  font-family: "BloggersansBold", "Arial", sans-serif;
-  font-size: 18px;
-  color: @white-four;
+  .text-10;
 }
 
 .road-map__item--fourth::after {
   content: "4";
-  font-family: "BloggersansBold", "Arial", sans-serif;
-  font-size: 18px;
-  color: @white-four;
+  .text-10;
 }
