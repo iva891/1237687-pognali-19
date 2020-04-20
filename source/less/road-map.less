@@ -1,0 +1,65 @@
+.road-map {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 360px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background-color: @dark-blue-grey;
+}
+
+.road-map__list {
+  margin-top: -70px;
+  margin-bottom: 40px;
+}
+
+.road-map__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  min-height: 90px;
+  margin-top: -10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.road-map__item-text {
+  width: 150px;
+}
+
+.road-map__item--first {
+  background-color: @mango;
+}
+
+.road-map__item--second {
+  background-color: @mango-three;
+}
+
+.road-map__item--third {
+  background-color: @mango-two;
+}
+
+.road-map__item--fourth {
+  background-color: @light-gold;
+  border-radius: 10px;
+}
+
+.road-map__item--first::after {
+  content: "1";
+  .text-10;
+}
+
+.road-map__item--second::after {
+  content: "2";
+  .text-10;
+}
+
+.road-map__item--third::after {
+  content: "3";
+  .text-10;
+}
+
+.road-map__item--fourth::after {
+  content: "4";
+  .text-10;
+}

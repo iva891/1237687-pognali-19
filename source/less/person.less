@@ -1,0 +1,68 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.person__title {
+  position: absolute;
+  bottom: 95px;
+  z-index: 7;
+}
+
+.person__image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.person-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 157px;
+  padding-left: 46px;
+  padding-right: 46px;
+  background-color: @white-four;
+  border-radius: 0 0 20px 20px;
+}
+
+.person__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -250px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: @black-60;
+  border: 3px solid @mango;
+  border-radius: 50%;
+}
+
+.person__level-value {
+  margin: 0;
+  border-bottom: 2px solid @white-30;
+}
+
+.person__level-text {
+  margin: 0;
+}
+
+.person__wish-list {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.person__tag-cloud {
+  margin-top: 65px;
+}
+
+.person__cargo {
+  margin-top: 17px;
+  margin-bottom: 22px;
+}

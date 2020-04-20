@@ -1,0 +1,21 @@
+.state {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.state__country-item {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+.state__country-item::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 26px;
+  height: 18px;
+  border: 1px solid black;
+}
