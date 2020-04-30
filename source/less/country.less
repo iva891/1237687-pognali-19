@@ -1,7 +1,6 @@
 .country {
-  // width: 270px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 7.8%;
+  padding-right: 7.8%;
 }
 
 .country__item {
@@ -48,4 +47,78 @@
 .country__rating {
   margin-left: auto;
   margin-right: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .country {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .country__item {
+    position: relative;
+    flex-direction: row-reverse;
+    min-height: 140px;
+    background-size: auto 100%;
+    background-position: center right;
+    border-radius: 20px;
+    z-index: 2;
+
+    &--thailand {
+      background-image: url("../img/thailand-desktop@1x.jpg");
+    }
+
+    &--france {
+      background-image: url("../img/france-desktop@1x.jpg");
+    }
+
+    &--czech {
+      background-image: url("../img/czech-desktop@1x.jpg");
+    }
+  }
+
+  .country__item-wrapper {
+    flex-direction: column;
+    width: calc(100% - 185px);
+    border-radius: 20px 0 0 20px;
+
+    &--czech {
+      background-color: @white-four;
+      background-image: none;
+    }
+  }
+
+  .country__item-text {
+    margin-left: 31px;
+  }
+
+  .country__rating {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 61px;
+    margin-bottom: 0;
+  }
+
+  .country__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .country__slogan {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .country {
+    order: -1;
+    width: 560px;
+    padding: 0;
+  }
+
+  .country__item-wrapper--czech {
+    background-color: @pale-grey;
+    background-image: linear-gradient(to bottom, @white-four, @white-four 30%, transparent 80%, transparent);
+  }
 }

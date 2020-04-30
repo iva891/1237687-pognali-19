@@ -10,12 +10,14 @@
 }
 
 .direction__content {
+  position: relative;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .direction__country {
+  position: relative;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -25,4 +27,67 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .direction__wrapper {
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 50px right 40px;
+  }
+
+  .direction__content {
+    padding-right: 356px;
+  }
+
+  .direction__country {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: -25px;
+      width: 141px;
+      height: 141px;
+      background-color: @pale-grey-four;
+      border-radius: 20px;
+      z-index: 1;
+    }
+  }
+
+  .direction__show-all {
+    min-width: 618px;
+    margin-top: 47px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .direction__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 790px;
+    padding-top: 110px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-position: top 50px right 40px;
+  }
+
+  .direction__content {
+    width: 350px;
+    padding: 0;
+  }
+
+  .direction__show-all {
+    position: absolute;
+    top: 540px;
+    right: 230px;
+    min-width: 274px;
+    min-height: 81px;
+    margin: 0;
+    // margin-top: 47px;
+    // margin-bottom: 80px;
+  }
 }

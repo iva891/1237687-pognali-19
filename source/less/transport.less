@@ -43,3 +43,19 @@
   background-size: auto 16px;
   border-radius: 50%;
 }
+
+@media (min-width: @tablet-width) {
+  .transport--user-card {
+    flex-direction: column;
+  }
+
+  .transport__item--user-card {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport--user-card {
+    flex-direction: row;
+  }
+}

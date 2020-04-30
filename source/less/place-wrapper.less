@@ -19,3 +19,40 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: @tablet-width) {
+  .place-wrapper__place {
+    min-width: 440px;
+    text-align: center;
+  }
+
+  .place-wrapper__route {
+    min-width: 618px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .place-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-left: 9.17%;
+    padding-right: 9.17%;
+    padding-bottom: 60px;
+  }
+
+  .place-wrapper__place {
+    min-height: 81px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .place-wrapper__route {
+    min-width: 324px;
+    min-height: 81px;
+    margin: 0;
+  }
+}

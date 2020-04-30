@@ -12,16 +12,16 @@
 
   <header class="page__header header">
 
-    <div class="header__wrapper center">
-      <div class="header__logo logo">
-        <a href="#" class="logo__link">
-          <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100px" height="19px" alt="Погнали">
-        </a>
-      </div>
-      <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-
     <div class="header__nav-wrapper">
+      <div class="header__wrapper center">
+        <div class="header__logo logo">
+          <a href="#" class="logo__link">
+            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100px" height="19px" alt="Погнали">
+          </a>
+        </div>
+        <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
       <nav class="header__nav page-nav">
         <ul class="page-nav__list">
           <li class="page-nav__item"><a href="#" class="page-nav__link text-3">О сервисе</a></li>
@@ -33,23 +33,23 @@
       <div class="header__login-wrapper">
         <a href="#" class="header__login-link text-4 button">Авторизация</a>
       </div>
-
-      <ul class="header__contacts contacts-menu text-5">
-        <li class="contacts-menu__item contacts-menu__item--phone"><a href="tel:+78005558628"
-            class="contacts-menu__link">8-800-555-86-28</a></li>
-        <li class="contacts-menu__item contacts-menu__item--email"><a href="mailto:mail@htmlacademy.ru"
-            class="contacts-menu__link">mail@htmlacademy.ru</a></li>
-      </ul>
-
-      <ul class="header__social social-link">
-        <li class="social-link__item"><a href="#" class="social-link__link social-link__link--fb"><span
-              class="visually-hidden">Фейсбук</span></a></li>
-        <li class="social-link__item"><a href="#" class="social-link__link social-link__link--vk"><span
-              class="visually-hidden">Вконтакте</span></a></li>
-        <li class="social-link__item"><a href="#" class="social-link__link social-link__link--instagram"><span
-              class="visually-hidden">Инстаграм</span></a></li>
-      </ul>
     </div>
+
+    <ul class="header__contacts contacts-menu contacts-menu--header text-5">
+      <li class="contacts-menu__item contacts-menu__item--header-phone contacts-menu__item--phone"><a
+          href="tel:+78005558628" class="contacts-menu__link">8-800-555-86-28</a></li>
+      <li class="contacts-menu__item contacts-menu__item--header-email contacts-menu__item--email"><a
+          href="mailto:mail@htmlacademy.ru" class="contacts-menu__link">mail@htmlacademy.ru</a></li>
+    </ul>
+
+    <ul class="header__social social-link social-link--header">
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--fb"><span
+            class="visually-hidden">Фейсбук</span></a></li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--vk"><span
+            class="visually-hidden">Вконтакте</span></a></li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--instagram"><span
+            class="visually-hidden">Инстаграм</span></a></li>
+    </ul>
   </header>
 
   <main class="page__main main">
@@ -99,7 +99,7 @@
 
     <div class="main__wrapper-about">
       <section class="main__about-service about">
-        <div class="about__content lead">
+        <div class="about__content lead lead--about-service">
           <h2 class="lead__title text-11">О сервисе</h2>
           <p class="lead__base-text text-7">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
             Делитесь
@@ -107,6 +107,7 @@
           <p class="lead__additional-text text-8">А если найдете кого-то близкого по духу — скорее зовите в совместный
             трип!
           </p>
+          <a href="#" class="lead__show-details text-16 button button--square">Подробнее</a>
         </div>
       </section>
     </div>
@@ -116,9 +117,7 @@
         <div class="direction__content lead">
           <h2 class="lead__title text-11">Направления</h2>
           <p class="lead__base-text text-7 lead__base-text--dark">Мы не продаем туры и ничего не рекламируем. Люди сами
-            пишут о
-            странах, куда хотели бы
-            отправиться и чем можно там заняться.</p>
+            пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
         </div>
 
         <ul class="direction__country country">
@@ -165,96 +164,88 @@
 
     <section class="main__our-user people">
       <div class="people__wrapper">
+        <div class="people__wrapper-without-button">
+          <div class="people__content lead">
+            <h2 class="lead__title text-11">Попутчики</h2>
+            <p class="lead__base-text text-7">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+              нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p>
+            <p class="lead__additional-text text-8">Теперь можно легко найти единомышленников!</p>
+          </div>
 
-        <div class="people__content lead">
-          <h2 class="lead__title text-11">Попутчики</h2>
-          <p class="lead__base-text text-7">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
-            нужен пляж
-            и
-            коктейль, а другому маршрут для хайкинга.</p>
-          <p class="lead__additional-text text-8">Теперь можно легко найти единомышленников!</p>
-        </div>
+          <ul class="people__list">
+            <li class="people__item person center">
+              <h3 class="person__title text-19">Таня Фирсова</h3>
+              <img class="person__image" src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Таня Фирсова">
 
-        <div class="people__list">
-          <ul>
-            <li>
-              <article class="people__item person">
-                <h3 class="person__title text-19">Таня Фирсова</h3>
-                <img class="person__image" src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Таня Фирсова">
-
-                <div class="person-wrapper">
-                  <div class="person__rating">
-                    <p class="person__level-value text-17">99</p>
-                    <p class="person__level-text text-18">level</p>
-                  </div>
-
-                  <ul class="person__wish-list place">
-                    <li class="place__item place__item--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
-                    <li class="place__item place__item--thailand"><span class="visually-hidden">Таиланд</span></li>
-                    <li class="place__item place__item--seychelles"><span class="visually-hidden">Сейшелы</span></li>
-                  </ul>
-
-                  <ul class="person__tag-cloud tag-list">
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#ЗОЖ</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#ПП</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#Фитнес</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#пляж</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#авокадо</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#смузи</a></li>
-                  </ul>
-
-                  <ul class="person__cargo transport">
-                    <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
-                    </li>
-                    <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
-                    </li>
-                  </ul>
+              <div class="person-wrapper">
+                <div class="person__rating">
+                  <p class="person__level-value text-17">99</p>
+                  <p class="person__level-text text-18">level</p>
                 </div>
-              </article>
+
+                <ul class="person__wish-list place">
+                  <li class="place__item place__item--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
+                  <li class="place__item place__item--thailand"><span class="visually-hidden">Таиланд</span></li>
+                  <li class="place__item place__item--seychelles"><span class="visually-hidden">Сейшелы</span></li>
+                </ul>
+
+                <ul class="person__tag-cloud tag-list">
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#ЗОЖ</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#ПП</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#Фитнес</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#пляж</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#авокадо</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#смузи</a></li>
+                </ul>
+
+                <ul class="person__cargo transport">
+                  <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
+                  <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
+                  <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
 
-              <article class="people__item person">
-                <h3 class="person__title text-19">Петя Демин</h3>
-                <img class="person__image" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="Петя Демин">
+            <li class="people__item person center">
+              <h3 class="person__title text-19">Петя Демин</h3>
+              <img class="person__image" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="Петя Демин">
 
-                <div class="person-wrapper">
-                  <div class="person__rating">
-                    <p class="person__level-value text-17">80</p>
-                    <p class="person__level-text text-18">level</p>
-                  </div>
-
-                  <ul class="person__wish-list place">
-                    <li class="place__item place__item--belgium"><span class="visually-hidden">Бельгия</span></li>
-                    <li class="place__item place__item--czech"><span class="visually-hidden">Чехия</span></li>
-                  </ul>
-
-                  <ul class="person__tag-cloud tag-list">
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#бургер</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#бар</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#футбол</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#концерт</a></li>
-                    <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#крафт</a></li>
-                  </ul>
-
-                  <ul class="person__cargo transport">
-                    <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
-                    <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
-                    <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
-                    </li>
-                    <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
-                    </li>
-                  </ul>
+              <div class="person-wrapper">
+                <div class="person__rating">
+                  <p class="person__level-value text-17">80</p>
+                  <p class="person__level-text text-18">level</p>
                 </div>
-              </article>
+
+                <ul class="person__wish-list place">
+                  <li class="place__item place__item--belgium"><span class="visually-hidden">Бельгия</span></li>
+                  <li class="place__item place__item--czech"><span class="visually-hidden">Чехия</span></li>
+                </ul>
+
+                <ul class="person__tag-cloud tag-list">
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#бургер</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#бар</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#футбол</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#концерт</a></li>
+                  <li class="tag-list__item"><a href="#" class="tag-list__item-link text-20">#крафт</a></li>
+                </ul>
+
+                <ul class="person__cargo transport">
+                  <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
+                  <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
+                  <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
 
         <a href="#" class="people__show-all text-16 button button--square">Показать всех</a>
-
       </div>
     </section>
 
@@ -296,7 +287,7 @@
 
         <div class="registration__content lead">
           <h2 class="lead__title lead__title--center text-11">Заинтересовались?</h2>
-          <p class="lead__base-text text-7 lead__base-text--center">Зарегистрируйтесь, это быстро и бесплатно! Уже
+          <p class="lead__base-text text-7 lead__base-text--center">Зарегистрируйтесь, это быстро и бесплатно!<br>Уже
             зарегистрированы? Тогда скорее <a href="#"
               class="lead__base-text text-7 lead__base-text--link">авторизуйтесь</a>.
           </p>
@@ -304,7 +295,9 @@
 
         <form action="https://echo.htmlacademy.ru" method="post" class="registration__form login-input">
           <input id="usermail" type="email" name="usermail" placeholder="E-mail" class="login-input__email">
-          <button type="submit" class="login-input__button"><span class="visually-hidden">отправить</span></button>
+          <button type="submit" class="login-input__button"><span
+              class="login-input__button-text text-44">Регистрация</span><span
+              class="visually-hidden">отправить</span></button>
         </form>
 
         <p class="registration__text lead__base-text text-7 lead__base-text--center">Остались вопросы? Мы с радостью на
