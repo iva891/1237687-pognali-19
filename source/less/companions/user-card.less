@@ -52,6 +52,12 @@
   margin-bottom: 5px;
 }
 
+.user-card__level-text--eng {
+  display: none;
+  text-transform: none;
+  color: rgba(68, 68, 68, 0.4);
+}
+
 .user-card__level-value {
   width: 45px;
   height: 45px;
@@ -63,6 +69,10 @@
   line-height: 45px;
 }
 
+.user-card__country {
+  margin-left: 25px;
+}
+
 .user-card__link {
   width: 230px;
   height: 40px;
@@ -71,4 +81,151 @@
   margin-right: auto;
   margin-bottom: 22px;
   line-height: 40px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .user-card {
+    position: relative;
+    width: 688px;
+    min-height: 332px;
+    border-radius: 10px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .user-card__image {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .user-card__wrapper {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .user-card__title {
+    width: 255px;
+  }
+
+  .user-card__rating {
+    margin-top: 113px;
+    text-align: right;
+  }
+
+  .user-card__tags {
+    position: absolute;
+    top: 75px;
+    left: 260px;
+    width: 255px;
+    margin: 0;
+  }
+
+  .user-card__transfer-wrapper {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user-card__level-rank {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 132px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid @mango;
+    border-radius: 50%;
+  }
+
+  .user-card__level-text--rus {
+    display: none;
+  }
+
+  .user-card__level-text--eng {
+    display: inline;
+  }
+
+  .user-card__level-text {
+    width: 31px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(68, 68, 68, 0.4);
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .user-card__level-value {
+    height: 24px;
+    border: none;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .user-card__link {
+    position: absolute;
+    top: 152px;
+    left: 260px;
+    width: 148px;
+    height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-card {
+    width: 950px;
+    min-height: 285px;
+    flex-direction: row;
+  }
+
+  .user-card__header {
+    margin-top: 0;
+  }
+
+  .user-card__image {
+    margin: 0;
+  }
+
+  .user-card__wrapper {
+    margin-top: 48px;
+    margin-left: 60px;
+  }
+
+  .user-card__country {
+    margin-top: 48px;
+    margin-left: 43px;
+  }
+
+  .user-card__tags {
+    top: 95px;
+    left: 345px;
+  }
+
+  .user-card__link {
+    top: 166px;
+    left: 344px;
+  }
+
+  .user-card__transfer-wrapper {
+    top: 137px;
+    right: 44px;
+    flex-direction: row;
+    width: 262px;
+  }
+
+  .user-card__level-rank {
+    position: static;
+  }
 }

@@ -3,10 +3,11 @@
 }
 
 .price__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  padding-right: 25px;
+  padding-left: 15.6%;
+  padding-right: 7.8%;
   background-color: @pale-grey;
   border-radius: 0 0 30px 30px;
 }
@@ -26,11 +27,11 @@
   margin-left: 10px;
 }
 
-.price__title::after {
+.price__wrapper::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 135px;
+  top: 25px;
+  right: 7.8%;
   width: 99px;
   height: 99px;
   background-image: url("../img/rates@1x.png");
@@ -42,4 +43,46 @@
   margin-bottom: 38px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .price__wrapper {
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+
+    &::after {
+      top: 400px;
+      right: 80px;
+      z-index: 2;
+    }
+
+    .price__title-wrapper {
+      width: auto;
+    }
+
+    .price__title {
+      width: auto;
+    }
+  }
+
+  .price__show-business {
+    margin-top: 60px;
+    margin-left: 130px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__wrapper {
+    padding-top: 20px;
+    padding-left: 132px;
+    padding-right: 245px;
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      top: 186px;
+      right: 130px;
+    }
+  }
 }

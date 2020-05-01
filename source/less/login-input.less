@@ -32,3 +32,28 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+.login-input__button-text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .login-input {
+    width: 618px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .login-input {
+    width: 100%;
+  }
+
+  .login-input__button {
+    width: 325px;
+    background-position: center right 50px;
+  }
+
+  .login-input__button-text {
+    display: inline;
+  }
+}
