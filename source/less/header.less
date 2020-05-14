@@ -11,6 +11,11 @@
   margin-top: 27px;
 }
 
+.header__logo {
+  width: 100px;
+  height: 19px;
+}
+
 .header__nav-wrapper {
   display: flex;
   flex-direction: column;
@@ -67,13 +72,18 @@
 
 .header__social {
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .header__wrapper {
     width: 450px;
     margin-top: 56px;
+  }
+
+  .header__logo {
+    width: 166px;
+    height: 42px;
   }
 
   .header__nav-wrapper {
@@ -91,8 +101,14 @@
     order: 1;
   }
 
+  .header__contacts {
+    margin-top: 150px;
+    margin-left: 13%;
+  }
+
   .header__social {
-    margin-left: 100px;
+    margin-top: 132px;
+    margin-left: 16%;
     margin-bottom: 70px;
   }
 }
@@ -109,6 +125,11 @@
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .header__logo {
+    width: 200px;
+    height: 52px;
   }
 
   .header__nav-wrapper {
@@ -131,6 +152,10 @@
 
   .header__login-wrapper {
     margin-top: 0;
+  }
+
+  .header__login-link {
+    display: none;
   }
 
   .header__contacts {

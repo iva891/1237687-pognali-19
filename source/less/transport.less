@@ -3,38 +3,21 @@
   justify-content: center;
 }
 
-.transport__item {
+.transport__icon {
   width: 24px;
   height: 21px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.transport__item--plane {
-  background-image: url("../img/plane.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.transport__icon--deactive {
+  opacity: 0.15;
 }
 
-.transport__item--bus {
-  background-image: url("../img/bus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.transport__item--bike {
-  background-image: url("../img/bike.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.transport__item--on-foot {
-  background-image: url("../img/run.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.transport__item--user-card {
+.transport__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33px;
   height: 33px;
   margin-left: 0;
@@ -49,7 +32,7 @@
     flex-direction: column;
   }
 
-  .transport__item--user-card {
+  .transport__item {
     background-color: transparent;
   }
 }

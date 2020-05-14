@@ -1,9 +1,16 @@
 .about {
+  position: relative;
   background-color: @dark-blue-grey;
-  background-image: url("../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 0 0 30px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 113px;
+    height: 132px;
+    background-color: @dark-blue-grey-four;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 @media (min-width: @tablet-width) {

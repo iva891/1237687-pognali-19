@@ -1,8 +1,20 @@
 .lead {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
   padding-right: 60px;
+
+  &--about-service {
+    background-image: url("../img/about-mobile@1x.png");
+    background-size: 292px auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-mobile@2x.png");
+    }
+  }
 }
 
 .lead__title {
@@ -20,6 +32,10 @@
 .lead__additional-text {
   margin-top: 25px;
   margin-bottom: 70px;
+}
+
+.lead__line-break {
+  display: none;
 }
 
 .lead__base-text--dark {
@@ -41,14 +57,16 @@
 
 @media (min-width: @tablet-width) {
   .lead {
-    position: relative;
-
     &--about-service {
       padding-right: 391px;
       background-image: url("../img/about-tablet@1x.png");
+      background-size: 376px auto;
       background-repeat: no-repeat;
       background-position: right center;
-      z-index: 100;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/about-tablet@2x.png");
+      }
     }
   }
 
@@ -56,12 +74,16 @@
     margin-bottom: 0;
   }
 
+  .lead__line-break {
+    display: inline;
+  }
 
   .lead__show-details {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-width: 274px;
     min-height: 81px;
-    padding-top: 10px;
     margin-top: 53px;
     margin-bottom: 88px;
   }
@@ -72,7 +94,12 @@
     &--about-service {
       padding-right: 700px;
       background-image: url("../img/about-desktop@1x.png");
+      background-size: 630px auto;
       background-position: right 60px center;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/about-desktop@2x.png");
+      }
     }
   }
 }

@@ -16,7 +16,13 @@
       <div class="header__wrapper center">
         <div class="header__logo logo">
           <a href="#" class="logo__link">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100px" height="19px" alt="Погнали">
+            <picture class="logo__image">
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
+            </picture>
           </a>
         </div>
         <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
@@ -24,31 +30,81 @@
 
       <nav class="header__nav page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="index.html" class="page-nav__link text-3">О сервисе</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link text-3">О сервисе</a></li>
           <li class="page-nav__item"><a href="direction.html" class="page-nav__link text-3">Направления</a></li>
           <li class="page-nav__item"><a href="companions.html" class="page-nav__link text-3">Попутчики</a></li>
         </ul>
       </nav>
 
       <div class="header__login-wrapper">
+        <ul class="header__login-list login-list login-list--header">
+          <li class="login-list__item login-list__item--phone"><a href="tel:+78005558628">
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+              </svg>
+              <span class="visually-hidden">Телефон</span>
+            </a></li>
+
+          <li class="login-list__item login-list__item--email"><a href="mailto:mail@htmlacademy.ru">
+              <div class="login-list__item-icon">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                </svg>
+              </div>
+              <span class="visually-hidden">e-mail</span>
+            </a></li>
+          <li><a href="#" class="login-list__item login-list__item--user text-4 button">Авторизация</a></li>
+        </ul>
+
         <a href="#" class="header__login-link text-4 button">Авторизация</a>
       </div>
     </div>
 
     <ul class="header__contacts contacts-menu contacts-menu--header text-5">
-      <li class="contacts-menu__item contacts-menu__item--header-phone contacts-menu__item--phone"><a
-          href="tel:+78005558628" class="contacts-menu__link">8-800-555-86-28</a></li>
-      <li class="contacts-menu__item contacts-menu__item--header-email contacts-menu__item--email"><a
-          href="mailto:mail@htmlacademy.ru" class="contacts-menu__link">mail@htmlacademy.ru</a></li>
+      <li class="contacts-menu__item contacts-menu__item--header-phone contacts-menu__item--phone">
+        <a href="tel:+78005558628" class="contacts-menu__link">
+          <div class="contacts-menu__link-icon">
+            <svg class="contacts-menu__icon">
+              <use xlink:href="img/sprite.svg#contacts-phone"></use>
+            </svg>
+          </div>
+          <span>8-800-555-86-28</span>
+        </a>
+      </li>
+      <li class="contacts-menu__item contacts-menu__item--header-email contacts-menu__item--email">
+        <a href="mailto:mail@htmlacademy.ru" class="contacts-menu__link">
+          <div class="contacts-menu__link-icon">
+            <svg class="contacts-menu__icon">
+              <use xlink:href="img/sprite.svg#contacts-mail"></use>
+            </svg>
+          </div>
+          <span>mail@htmlacademy.ru</span>
+        </a>
+      </li>
     </ul>
 
-    <ul class="header__social social-link social-link--header">
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--fb"><span
-            class="visually-hidden">Фейсбук</span></a></li>
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--vk"><span
-            class="visually-hidden">Вконтакте</span></a></li>
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--instagram"><span
-            class="visually-hidden">Инстаграм</span></a></li>
+    <ul class="header__social social-link social-link--header center">
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
     </ul>
   </header>
 
@@ -366,27 +422,46 @@
   <footer class="page__footer footer">
     <div class="footer__logo center logo">
       <a href="#" class="logo__link">
-        <img class="logo__image logo__image--dark" src="img/logo-mobile-blue@1x.png" width="100px" height="19px"
-          alt="Погнали">
+        <picture class="logo__image">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
+        </picture>
       </a>
     </div>
 
-    <ul class="footer__social social-link">
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--fb social-link__link--footer"><span
-            class="visually-hidden">Фейсбук</span></a></li>
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--vk social-link__link--footer"><span
-            class="visually-hidden">Вконтакте</span></a></li>
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--instagram social-link__link--footer"><span
-            class="visually-hidden">Инстаграм</span></a></li>
+    <ul class="footer__social social-link center">
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--fb social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--vk social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--instagram social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
 
     <p class="footer__text center">
       <span class="footer__text-content text-39">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo"><img src="img/htmlacademy.svg"
-          width="27" height="34" alt="Разработано в Htmlacademy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo">
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </p>
   </footer>
 </body>
