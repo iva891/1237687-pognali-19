@@ -16,7 +16,13 @@
       <div class="header__wrapper center">
         <div class="header__logo logo">
           <a href="#" class="logo__link">
-            <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100px" height="19px" alt="Погнали">
+            <picture class="logo__image">
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
+            </picture>
           </a>
         </div>
         <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
@@ -31,24 +37,74 @@
       </nav>
 
       <div class="header__login-wrapper">
+        <ul class="header__login-list login-list login-list--header">
+          <li class="login-list__item login-list__item--phone"><a href="tel:+78005558628">
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+              </svg>
+              <span class="visually-hidden">Телефон</span>
+            </a></li>
+
+          <li class="login-list__item login-list__item--email"><a href="mailto:mail@htmlacademy.ru">
+              <div class="login-list__item-icon">
+                <svg width="18" height="14">
+                  <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+                </svg>
+              </div>
+              <span class="visually-hidden">e-mail</span>
+            </a></li>
+          <li><a href="#" class="login-list__item login-list__item--user text-4 button">Авторизация</a></li>
+        </ul>
+
         <a href="#" class="header__login-link text-4 button">Авторизация</a>
       </div>
     </div>
 
     <ul class="header__contacts contacts-menu contacts-menu--header text-5">
-      <li class="contacts-menu__item contacts-menu__item--header-phone contacts-menu__item--phone"><a
-          href="tel:+78005558628" class="contacts-menu__link">8-800-555-86-28</a></li>
-      <li class="contacts-menu__item contacts-menu__item--header-email contacts-menu__item--email"><a
-          href="mailto:mail@htmlacademy.ru" class="contacts-menu__link">mail@htmlacademy.ru</a></li>
+      <li class="contacts-menu__item contacts-menu__item--header-phone contacts-menu__item--phone">
+        <a href="tel:+78005558628" class="contacts-menu__link">
+          <div class="contacts-menu__link-icon">
+            <svg class="contacts-menu__icon">
+              <use xlink:href="img/sprite.svg#contacts-phone"></use>
+            </svg>
+          </div>
+          <span>8-800-555-86-28</span>
+        </a>
+      </li>
+      <li class="contacts-menu__item contacts-menu__item--header-email contacts-menu__item--email">
+        <a href="mailto:mail@htmlacademy.ru" class="contacts-menu__link">
+          <div class="contacts-menu__link-icon">
+            <svg class="contacts-menu__icon">
+              <use xlink:href="img/sprite.svg#contacts-mail"></use>
+            </svg>
+          </div>
+          <span>mail@htmlacademy.ru</span>
+        </a>
+      </li>
     </ul>
 
-    <ul class="header__social social-link social-link--header">
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--fb"><span
-            class="visually-hidden">Фейсбук</span></a></li>
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--vk"><span
-            class="visually-hidden">Вконтакте</span></a></li>
-      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--instagram"><span
-            class="visually-hidden">Инстаграм</span></a></li>
+    <ul class="header__social social-link social-link--header center">
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-link__item"><a href="#" class="social-link__link social-link__link--header">
+          <svg class="social-link__icon social-link__icon--instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
     </ul>
   </header>
 
@@ -58,11 +114,22 @@
     <section class="main__first-screen first-screen">
       <p class="first-screen__slogan text-6">В путешествие с&nbsp;крутыми попутчиками!</p>
 
-      <ul class="first-screen__menu login-list">
-        <li class="login-list__item login-list__item--phone"><a href="tel:+78005558628"><span
-              class="visually-hidden">Телефон</span></a></li>
-        <li class="login-list__item login-list__item--email"><a href="mailto:mail@htmlacademy.ru"><span
-              class="visually-hidden">e-mail</span></a></li>
+      <ul class="first-screen__menu login-list login-list--first-screen">
+        <li class="login-list__item login-list__item--phone"><a href="tel:+78005558628">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#topmenu-phone"></use>
+            </svg>
+            <span class="visually-hidden">Телефон</span>
+          </a></li>
+
+        <li class="login-list__item login-list__item--email"><a href="mailto:mail@htmlacademy.ru">
+            <div class="login-list__item-icon">
+              <svg width="18" height="14">
+                <use xlink:href="img/sprite.svg#topmenu-mail"></use>
+              </svg>
+            </div>
+            <span class="visually-hidden">e-mail</span>
+          </a></li>
         <li><a href="#" class="login-list__item login-list__item--user text-4 button">Авторизация</a></li>
       </ul>
 
@@ -107,7 +174,12 @@
           <p class="lead__additional-text text-8">А если найдете кого-то близкого по духу — скорее зовите в совместный
             трип!
           </p>
-          <a href="#" class="lead__show-details text-16 button button--square">Подробнее</a>
+          <a href="#" class="lead__show-details text-16 button button--square">
+            <span>Подробнее</span>
+            <svg class="right-arrow">
+              <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </div>
@@ -125,10 +197,18 @@
             <div class="country__item country__item--thailand">
               <div class="country__item-wrapper">
                 <div class="country__item-text">
+                  <svg class="country__flag">
+                    <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                  </svg>
                   <h3 class="country__title text-13">Тайланд</h3>
                   <p class="country__slogan text-14">Джунгли зовут</p>
                 </div>
-                <p class="country__rating text-15">18321</p>
+                <div class="country__rating text-15">
+                  <svg class="country__user-icon">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  <p class="country__rating-text">18321</p>
+                </div>
               </div>
             </div>
           </li>
@@ -137,10 +217,18 @@
             <div class="country__item country__item--france">
               <div class="country__item-wrapper">
                 <div class="country__item-text">
+                  <svg class="country__flag">
+                    <use xlink:href="img/sprite.svg#flag-france"></use>
+                  </svg>
                   <h3 class="country__title text-13">Франция</h3>
                   <p class="country__slogan text-14">Трэ бьен, манифик!</p>
                 </div>
-                <p class="country__rating text-15">12518</p>
+                <div class="country__rating text-15">
+                  <svg class="country__user-icon">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  <p class="country__rating-text">12518</p>
+                </div>
               </div>
             </div>
           </li>
@@ -149,16 +237,29 @@
             <div class="country__item country__item--czech">
               <div class="country__item-wrapper country__item-wrapper--czech">
                 <div class="country__item-text">
+                  <svg class="country__flag">
+                    <use xlink:href="img/sprite.svg#flag-czech"></use>
+                  </svg>
                   <h3 class="country__title text-13">Чехия</h3>
                   <p class="country__slogan text-14">Закоулки старой Европы</p>
                 </div>
-                <p class="country__rating text-15">5326</p>
+                <div class="country__rating text-15">
+                  <svg class="country__user-icon">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                  <p class="country__rating-text">5326</p>
+                </div>
               </div>
             </div>
           </li>
         </ul>
 
-        <a href="#" class="direction__show-all text-16 button button--square">Показать все</a>
+        <a href="#" class="direction__show-all text-16 button button--square">
+          <span>Показать все</span>
+          <svg class="right-arrow">
+            <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -169,24 +270,49 @@
             <h2 class="lead__title text-11">Попутчики</h2>
             <p class="lead__base-text text-7">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
               нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p>
-            <p class="lead__additional-text text-8">Теперь можно легко найти единомышленников!</p>
+            <p class="lead__additional-text text-8">Теперь можно легко <br class="lead__line-break">найти
+              единомышленников!</p>
           </div>
 
           <ul class="people__list">
             <li class="people__item person center">
               <h3 class="person__title text-19">Таня Фирсова</h3>
-              <img class="person__image" src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Таня Фирсова">
 
-              <div class="person-wrapper">
+              <picture class="person__image-picture">
+                <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                <img class="person__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desctop@1x.jpg 2x"
+                  alt="Таня Фирсова">
+              </picture>
+
+              <div class="person__wrapper">
+                <svg class="person__rating-bar" width="65" height="65">
+                  <circle r="31" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="4"
+                    stroke-dasharray="180 10" stroke-dashoffset="45" />
+                </svg>
                 <div class="person__rating">
                   <p class="person__level-value text-17">99</p>
                   <p class="person__level-text text-18">level</p>
                 </div>
 
                 <ul class="person__wish-list place">
-                  <li class="place__item place__item--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
-                  <li class="place__item place__item--thailand"><span class="visually-hidden">Таиланд</span></li>
-                  <li class="place__item place__item--seychelles"><span class="visually-hidden">Сейшелы</span></li>
+                  <li>
+                    <svg class="place__item">
+                      <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
+                    </svg>
+                    <span class="visually-hidden">Шри-Ланка</span>
+                  </li>
+                  <li>
+                    <svg class="place__item">
+                      <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                    </svg>
+                    <span class="visually-hidden">Таиланд</span>
+                  </li>
+                  <li>
+                    <svg class="place__item">
+                      <use xlink:href="img/sprite.svg#flag-seychelles"></use>
+                    </svg>
+                    <span class="visually-hidden">Сейшелы</span>
+                  </li>
                 </ul>
 
                 <ul class="person__tag-cloud tag-list">
@@ -199,11 +325,29 @@
                 </ul>
 
                 <ul class="person__cargo transport">
-                  <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
-                  <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
-                  <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
+                  <li>
+                    <svg class="transport__icon">
+                      <use xlink:href="img/sprite.svg#plane"></use>
+                    </svg>
+                    <span class="visually-hidden">Самолет</span>
                   </li>
-                  <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
+                  <li>
+                    <svg class="transport__icon transport__icon--deactive">
+                      <use xlink:href="img/sprite.svg#bus"></use>
+                    </svg>
+                    <span class="visually-hidden">Автобус</span>
+                  </li>
+                  <li>
+                    <svg class="transport__icon transport__icon--deactive">
+                      <use xlink:href="img/sprite.svg#bike"></use>
+                    </svg>
+                    <span class="visually-hidden">Велосипед</span>
+                  </li>
+                  <li>
+                    <svg class="transport__icon transport__icon--deactive">
+                      <use xlink:href="img/sprite.svg#run"></use>
+                    </svg>
+                    <span class="visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
@@ -211,17 +355,36 @@
 
             <li class="people__item person center">
               <h3 class="person__title text-19">Петя Демин</h3>
-              <img class="person__image" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="Петя Демин">
 
-              <div class="person-wrapper">
+              <picture class="person__image-picture">
+                <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                <img class="person__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desctop@1x.jpg 2x"
+                  alt="Петя Демин">
+              </picture>
+
+              <div class="person__wrapper">
+                <svg class="person__rating-bar" width="65" height="65">
+                  <circle r="31" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="4"
+                    stroke-dasharray="150 40" stroke-dashoffset="45" />
+                </svg>
                 <div class="person__rating">
                   <p class="person__level-value text-17">80</p>
                   <p class="person__level-text text-18">level</p>
                 </div>
 
                 <ul class="person__wish-list place">
-                  <li class="place__item place__item--belgium"><span class="visually-hidden">Бельгия</span></li>
-                  <li class="place__item place__item--czech"><span class="visually-hidden">Чехия</span></li>
+                  <li>
+                    <svg class="place__item">
+                      <use xlink:href="img/sprite.svg#flag-belgium"></use>
+                    </svg>
+                    <span class="visually-hidden">Бельгия</span>
+                  </li>
+                  <li>
+                    <svg class="place__item">
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
+                    </svg>
+                    <span class="visually-hidden">Чехия</span>
+                  </li>
                 </ul>
 
                 <ul class="person__tag-cloud tag-list">
@@ -233,11 +396,29 @@
                 </ul>
 
                 <ul class="person__cargo transport">
-                  <li class="transport__item transport__item--plane"><span class="visually-hidden">Самолет</span></li>
-                  <li class="transport__item transport__item--bus"><span class="visually-hidden">Автобус</span></li>
-                  <li class="transport__item transport__item--bike"><span class="visually-hidden">Велосипед</span>
+                  <li>
+                    <svg class="transport__icon">
+                      <use xlink:href="img/sprite.svg#plane"></use>
+                    </svg>
+                    <span class="visually-hidden">Самолет</span>
                   </li>
-                  <li class="transport__item transport__item--on-foot"><span class="visually-hidden">Пешком</span>
+                  <li>
+                    <svg class="transport__icon">
+                      <use xlink:href="img/sprite.svg#bus"></use>
+                    </svg>
+                    <span class="visually-hidden">Автобус</span>
+                  </li>
+                  <li>
+                    <svg class="transport__icon transport__icon--deactive">
+                      <use xlink:href="img/sprite.svg#bike"></use>
+                    </svg>
+                    <span class="visually-hidden">Велосипед</span>
+                  </li>
+                  <li>
+                    <svg class="transport__icon">
+                      <use xlink:href="img/sprite.svg#run"></use>
+                    </svg>
+                    <span class="visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
@@ -245,7 +426,12 @@
           </ul>
         </div>
 
-        <a href="#" class="people__show-all text-16 button button--square">Показать всех</a>
+        <a href="#" class="people__show-all text-16 button button--square">
+          <span>Показать всех</span>
+          <svg class="right-arrow">
+            <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -296,19 +482,36 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="registration__form login-input">
           <input id="usermail" type="email" name="usermail" placeholder="E-mail" class="login-input__email">
           <button type="submit" class="login-input__button"><span
-              class="login-input__button-text text-44">Регистрация</span><span
-              class="visually-hidden">отправить</span></button>
+              class="login-input__button-text text-44">Регистрация</span>
+            <svg class="right-arrow right-arrow--center">
+              <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+            </svg>
+            <span class="visually-hidden">отправить</span></button>
         </form>
 
         <p class="registration__text lead__base-text text-7 lead__base-text--center">Остались вопросы? Мы с радостью на
           них
           ответим!</p>
 
-        <ul class="registration__contacts contacts-menu text-26">
-          <li class="contacts-menu__item contacts-menu__item--phone"><a href="tel:+78005558628"
-              class="contacts-menu__link contacts-menu__link--yellow">8-800-555-86-28</a></li>
+        <ul class="registration__contacts contacts-menu contacts-menu--footer text-26">
+          <li class="contacts-menu__item contacts-menu__item--phone">
+            <a href="tel:+78005558628" class="contacts-menu__link contacts-menu__link--yellow">
+              <div class="contacts-menu__link-icon">
+                <svg class="contacts-menu__icon">
+                  <use xlink:href="img/sprite.svg#contacts-phone"></use>
+                </svg>
+              </div>
+              <span>8-800-555-86-28</span>
+            </a></li>
           <li class="contacts-menu__item contacts-menu__item--email"><a href="mailto:mail@htmlacademy.ru"
-              class="contacts-menu__link contacts-menu__link--yellow">mail@htmlacademy.ru</a></li>
+              class="contacts-menu__link contacts-menu__link--yellow">
+              <div class="contacts-menu__link-icon">
+                <svg class="contacts-menu__icon">
+                  <use xlink:href="img/sprite.svg#contacts-mail"></use>
+                </svg>
+              </div>
+              <span>mail@htmlacademy.ru</span>
+            </a></li>
         </ul>
       </div>
     </section>
@@ -316,13 +519,25 @@
     <section class="main__place address">
       <div class="address__place-wrapper place-wrapper">
         <h2 class="visually-hidden">Адрес</h2>
-        <p class="place-wrapper__place text-5">ул. Большая Конюшенная, 19/8</p>
-        <a href="#" class="place-wrapper__route button text-16 button--square button--route">Проложить маршрут</a>
+        <div class="place-wrapper__place text-5">
+          <div class="place-wrapper__blue-circle">
+            <svg class="place-wrapper__icon">
+              <use xlink:href="img/sprite.svg#contacts-location"></use>
+            </svg>
+          </div>
+          <p class="place-wrapper__address">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <a href="#" class="place-wrapper__route button text-16 button--square button--route">
+          <span>Проложить маршрут</span>
+          <svg class="right-arrow">
+            <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+          </svg>
+        </a>
       </div>
       <div class="address__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586961525571!5m2!1sru!2sru"
-          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+           height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
       </div>
     </section>
@@ -331,27 +546,46 @@
   <footer class="page__footer footer">
     <div class="footer__logo center logo">
       <a href="#" class="logo__link">
-        <img class="logo__image logo__image--dark" src="img/logo-mobile-blue@1x.png" width="100px" height="19px"
-          alt="Погнали">
+        <picture class="logo__image">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
+        </picture>
       </a>
     </div>
 
-    <ul class="footer__social social-link">
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--fb social-link__link--footer"><span
-            class="visually-hidden">Фейсбук</span></a></li>
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--vk social-link__link--footer"><span
-            class="visually-hidden">Вконтакте</span></a></li>
-      <li class="social-link__item"><a href="#"
-          class="social-link__link social-link__link--instagram social-link__link--footer"><span
-            class="visually-hidden">Инстаграм</span></a></li>
+    <ul class="footer__social social-link center">
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--fb social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--facebook">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--vk social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--vk">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-link__item">
+        <a href="#" class="social-link__link social-link__link--instagram social-link__link--footer">
+          <svg class="social-link__icon social-link__icon--instagram">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
 
     <p class="footer__text center">
       <span class="footer__text-content text-39">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo"><img src="img/htmlacademy.svg"
-          width="27" height="34" alt="Разработано в Htmlacademy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__htmlacademy-logo">
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </p>
   </footer>
 </body>

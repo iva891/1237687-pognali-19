@@ -4,7 +4,14 @@
   min-width: 270px;
 }
 
+.login-list--header {
+  display: none;
+}
+
 .login-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -12,18 +19,10 @@
 
 .login-list__item--phone {
   background-color: @mango;
-  background-image: url("../img/topmenu-phone.svg");
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .login-list__item--email {
   background-color: @mango-two;
-  background-image: url("../img/topmenu-mail.svg");
-  background-size: 18px 14px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .login-list__item--user {
@@ -33,7 +32,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .login-list {
+  .login-list--first-screen {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .login-list--header {
+    display: flex;
+  }
+
+  .login-list__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .login-list__item--user {
+    width: 189px;
+    min-height: 50px;
+    line-height: 50px;
   }
 }

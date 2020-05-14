@@ -3,10 +3,29 @@
 }
 
 .people__wrapper {
+  position: relative;
   background-color: @dark-blue-grey;
   border-top: 1px solid @dark-blue-grey;
   border-bottom: 1px solid @dark-blue-grey;
   border-radius: 0 0 30px 30px;
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-size: 143px auto, 71px auto;
+  background-repeat: no-repeat;
+  background-position: 152px 39px, left 358px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-mobile@2x.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    width: 113px;
+    height: 132px;
+    background-color: @dark-blue-grey-four;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .people__content {
@@ -34,6 +53,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .people__wrapper {
+    background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-size: 143px auto, 285px auto;
+    background-position: 40px 390px, 402px 39px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rogovaya-back-desktop@2x.png");
+    }
+
+    &::before {
+      content: "";
+      top: 39px;
+      left: 40px;
+      width: 213px;
+      height: 213px;
+      border-radius: 20px;
+    }
+  }
+
   .people__content {
     padding-right: 260px;
   }
@@ -56,6 +94,13 @@
     padding-left: 132px;
     padding-right: 60px;
     padding-bottom: 50px;
+    background-position: 547px 133px, 191px 385px;
+
+    &::before {
+      content: "";
+      top: 68px;
+      left: 60px;
+    }
   }
 
   .people__wrapper-without-button {
