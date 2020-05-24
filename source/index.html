@@ -12,27 +12,33 @@
 
   <header class="page__header header">
 
-    <div class="header__nav-wrapper">
-      <div class="header__wrapper center">
-        <div class="header__logo logo">
-          <a href="#" class="logo__link">
-            <picture class="logo__image">
-              <source media="(min-width: 1440px)"
-                srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
-            </picture>
-          </a>
-        </div>
-        <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
+    <!-- Добавление модификатора header__wrapper--stiky делает блок header__wrapper липким. Состояние липкого меню шапки. -->
+
+    <div class="header__wrapper center">
+      <div class="header__logo logo">
+        <a href="#" class="logo__link">
+          <picture class="logo__image">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали">
+          </picture>
+        </a>
       </div>
+      <button type="button" class="header__open"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+
+    <!-- Добавление модификаторов header__nav-wrapper--close, contacts-menu--close, social-link--close скрывает соответствующие блоки. Это состояние закрытого меню шапки. -->
+
+    <div class="header__nav-wrapper">
 
       <nav class="header__nav page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="#" class="page-nav__link text-3">О сервисе</a></li>
-          <li class="page-nav__item"><a href="direction.html" class="page-nav__link text-3">Направления</a></li>
-          <li class="page-nav__item"><a href="companions.html" class="page-nav__link text-3">Попутчики</a></li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link text-3" data-hover="О сервисе">О сервисе</a></li>
+          <li class="page-nav__item"><a href="direction.html" class="page-nav__link text-3"
+              data-hover="Направления">Направления</a></li>
+          <li class="page-nav__item"><a href="companions.html" class="page-nav__link text-3"
+              data-hover="Попутчики">Попутчики</a></li>
         </ul>
       </nav>
 
@@ -53,10 +59,11 @@
               </div>
               <span class="visually-hidden">e-mail</span>
             </a></li>
-          <li><a href="#" class="login-list__item login-list__item--user text-4 button">Авторизация</a></li>
+          <li><a href="#" class="login-list__item login-list__item--user text-4 button button--header">Авторизация</a>
+          </li>
         </ul>
 
-        <a href="#" class="header__login-link text-4 button">Авторизация</a>
+        <a href="#" class="header__login-link text-4 button button--login">Авторизация</a>
       </div>
     </div>
 
@@ -153,7 +160,7 @@
         </li>
         <li class="road-map__item road-map__item--third">
           <p class="road-map__item-text text-9">
-            Найдите тех, кто похож на вас
+            Найдите тех, кто&nbsp;похож&nbsp;на вас
           </p>
         </li>
         <li class="road-map__item road-map__item--fourth">
@@ -167,8 +174,9 @@
     <div class="main__wrapper-about">
       <section class="main__about-service about">
         <div class="about__content lead lead--about-service">
-          <h2 class="lead__title text-11">О сервисе</h2>
-          <p class="lead__base-text text-7">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          <h2 class="lead__title about__content-title text-11">О сервисе</h2>
+          <p class="lead__base-text text-7">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с
+            тобой!
             Делитесь
             своими идеями путешествий и черпайте вдохновение в чужих. </p>
           <p class="lead__additional-text text-8">А если найдете кого-то близкого по духу — скорее зовите в совместный
@@ -187,9 +195,10 @@
     <section class="main__country direction">
       <div class="direction__wrapper">
         <div class="direction__content lead">
-          <h2 class="lead__title text-11">Направления</h2>
-          <p class="lead__base-text text-7 lead__base-text--dark">Мы не продаем туры и ничего не рекламируем. Люди сами
-            пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <h2 class="lead__title direction__content-title text-11">Направления</h2>
+          <p class="lead__base-text text-7 lead__base-text--dark">Мы не продаем туры
+            и&nbsp;ничего&nbsp;не&nbsp;рекламируем. Люди сами
+            пишут о странах, куда хотели бы отправиться и&nbsp;чем&nbsp;можно там заняться.</p>
         </div>
 
         <ul class="direction__country country">
@@ -267,9 +276,9 @@
       <div class="people__wrapper">
         <div class="people__wrapper-without-button">
           <div class="people__content lead">
-            <h2 class="lead__title text-11">Попутчики</h2>
+            <h2 class="lead__title people__content-title text-11">Попутчики</h2>
             <p class="lead__base-text text-7">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
-              нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p>
+              нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
             <p class="lead__additional-text text-8">Теперь можно легко <br class="lead__line-break">найти
               единомышленников!</p>
           </div>
@@ -295,19 +304,22 @@
                 </div>
 
                 <ul class="person__wish-list place">
-                  <li>
+                  <li class="place__tooltip tooltip">
+                    <span class="tooltip__text text-82">Шри&#8209;Ланка</span>
                     <svg class="place__item">
                       <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
                     </svg>
                     <span class="visually-hidden">Шри-Ланка</span>
                   </li>
-                  <li>
+                  <li class="place__tooltip tooltip">
+                    <span class="tooltip__text text-82">Таиланд</span>
                     <svg class="place__item">
                       <use xlink:href="img/sprite.svg#flag-thailand"></use>
                     </svg>
                     <span class="visually-hidden">Таиланд</span>
                   </li>
-                  <li>
+                  <li class="place__tooltip tooltip">
+                    <span class="tooltip__text text-82">Сейшелы</span>
                     <svg class="place__item">
                       <use xlink:href="img/sprite.svg#flag-seychelles"></use>
                     </svg>
@@ -325,25 +337,29 @@
                 </ul>
 
                 <ul class="person__cargo transport">
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Самолет</span>
                     <svg class="transport__icon">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                     <span class="visually-hidden">Самолет</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Автобус</span>
                     <svg class="transport__icon transport__icon--deactive">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                     <span class="visually-hidden">Автобус</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Велосипед</span>
                     <svg class="transport__icon transport__icon--deactive">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Пешком</span>
                     <svg class="transport__icon transport__icon--deactive">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
@@ -373,13 +389,15 @@
                 </div>
 
                 <ul class="person__wish-list place">
-                  <li>
+                  <li class="place__tooltip tooltip">
+                    <span class="tooltip__text text-82">Бельгия</span>
                     <svg class="place__item">
                       <use xlink:href="img/sprite.svg#flag-belgium"></use>
                     </svg>
                     <span class="visually-hidden">Бельгия</span>
                   </li>
-                  <li>
+                  <li class="place__tooltip tooltip">
+                    <span class="tooltip__text text-82">Чехия</span>
                     <svg class="place__item">
                       <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
@@ -396,25 +414,29 @@
                 </ul>
 
                 <ul class="person__cargo transport">
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Самолет</span>
                     <svg class="transport__icon">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                     <span class="visually-hidden">Самолет</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Автобус</span>
                     <svg class="transport__icon">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                     <span class="visually-hidden">Автобус</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Велосипед</span>
                     <svg class="transport__icon transport__icon--deactive">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li>
+                  <li class="transport__tooltip tooltip">
+                    <span class="tooltip__text text-82">Пешком</span>
                     <svg class="transport__icon">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
@@ -464,7 +486,16 @@
           </li>
         </ol>
 
-        <a href="#" class="price__show-business text-22">Показать тарифы для бизнеса</a>
+        <a href="#" class="price__show-business">
+          <div class="price__show-business-wrapper">
+            <svg class="price__show-business-icon">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </div>
+          <div class="price__show-business-text text-22">
+            Показать тарифы для бизнеса
+          </div>
+        </a>
       </div>
     </section>
 
@@ -472,15 +503,16 @@
       <div class="registration__wrapper">
 
         <div class="registration__content lead">
-          <h2 class="lead__title lead__title--center text-11">Заинтересовались?</h2>
-          <p class="lead__base-text text-7 lead__base-text--center">Зарегистрируйтесь, это быстро и бесплатно!<br>Уже
+          <h2 class="lead__title registration__content-title lead__title--center text-11">Заинтересовались?</h2>
+          <p class="lead__base-text text-7 lead__base-text--center">Зарегистрируйтесь,
+            это&nbsp;быстро&nbsp;и&nbsp;бесплатно!<br>Уже
             зарегистрированы? Тогда скорее <a href="#"
               class="lead__base-text text-7 lead__base-text--link">авторизуйтесь</a>.
           </p>
         </div>
 
         <form action="https://echo.htmlacademy.ru" method="post" class="registration__form login-input">
-          <input id="usermail" type="email" name="usermail" placeholder="E-mail" class="login-input__email">
+          <input id="usermail" type="email" name="usermail" placeholder="E-mail" size="200" class="login-input__email">
           <button type="submit" class="login-input__button"><span
               class="login-input__button-text text-44">Регистрация</span>
             <svg class="right-arrow right-arrow--center">
@@ -489,9 +521,8 @@
             <span class="visually-hidden">отправить</span></button>
         </form>
 
-        <p class="registration__text lead__base-text text-7 lead__base-text--center">Остались вопросы? Мы с радостью на
-          них
-          ответим!</p>
+        <p class="registration__text lead__base-text text-7 lead__base-text--center">Остались вопросы?
+          Мы&nbsp;с&nbsp;радостью&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
         <ul class="registration__contacts contacts-menu contacts-menu--footer text-26">
           <li class="contacts-menu__item contacts-menu__item--phone">
@@ -537,8 +568,7 @@
       <div class="address__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586961525571!5m2!1sru!2sru"
-           height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+          height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -589,26 +619,35 @@
     </p>
   </footer>
 
+  <!-- Добавление модификатора modal--show показывает модальное окно. -->
+
   <section class="page__modal modal">
     <h2 class="modal__title text-23">Бизнес-тарифы</h2>
     <ul class="modal-list">
       <li class="modal__item">
-        <p class="modal__item-title text-12">Реклама у блоггера<span class="modal__price text-12">300 000 руб./пост</span></p>
+        <p class="modal__item-title text-12">Реклама у блоггера<span class="modal__price text-12">300 000
+            руб./пост</span></p>
       </li>
       <li class="modal__item">
-        <p class="modal__item-title text-12">Накрутка подписчиков<span class="modal__price text-12">от 1 руб./шт.</span></p>
+        <p class="modal__item-title text-12">Накрутка подписчиков<span class="modal__price text-12">от 1 руб./шт.</span>
+        </p>
       </li>
       <li class="modal__item">
         <p class="modal__item-title text-12">Лайки от ботов<span class="modal__price text-12">от 20 коп./лайк</span></p>
       </li>
       <li class="modal__item">
-        <p class="modal__item-title text-12">Ваш продакт-плейсмент<span class="modal__price text-12">Индивидуально</span></p>
+        <p class="modal__item-title text-12">Ваш продакт-плейсмент<span
+            class="modal__price text-12">Индивидуально</span></p>
       </li>
     </ul>
     <button class="modal__button text-42" type="button">Закрыть окно</button>
   </section>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody(); // run it now or whenever you are ready
 
-
+  </script>
 </body>
 
 </html>

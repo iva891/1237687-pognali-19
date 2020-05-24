@@ -1,0 +1,47 @@
+.day-of-the-week-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 11px;
+  margin: 0 0 7px 0;
+
+  &--big {
+    display: none;
+  }
+}
+
+.day-of-the-week-list__item {
+  &--weekend {
+    color: @orange-red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .day-of-the-week-list {
+    display: none;
+    padding: 0;
+    margin: 0;
+
+    &--big {
+      display: flex;
+    }
+  }
+
+  .day-of-the-week-list__item {
+    width: 100%;
+    padding-left: 30px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .day-of-the-week-list {
+    margin: 0 0 13px 0;
+  }
+
+  .day-of-the-week-list__item {
+    padding-left: 18px;
+  }
+}

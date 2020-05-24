@@ -4,10 +4,34 @@
 
 .page-nav__item {
   text-align: center;
+  overflow: hidden;
 }
 
 .page-nav__link {
+  display: block;
+  position: relative;
   text-transform: uppercase;
+  transition: transform 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+
+    color: @light-gold;
+
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -21,7 +45,8 @@
     flex-direction: column;
     align-items: flex-start;
     min-width: 700px;
-    padding-left: 100px;
+    padding-left: 57px;
+    padding-top: 31px;
   }
 }
 

@@ -1,0 +1,135 @@
+.calendar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+
+  border-top: 1px solid @light-blue-grey-five;
+  border-bottom: 1px solid @light-blue-grey-five;
+}
+
+.calendar__btn {
+  position: relative;
+
+  padding: 0;
+  width: 9px;
+  height: 17px;
+
+  border: none;
+  background-color: transparent;
+
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+
+    width: 9px;
+    height: 17px;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.calendar__btn:hover::before,
+.calendar__btn:focus::before {
+  outline: none;
+  opacity: 0.5;
+}
+
+.calendar__btn:active::before {
+  outline: none;
+  opacity: 0.1;
+}
+
+.calendar__btn-previous {
+  margin-left: -3px;
+}
+
+.calendar__btn-previous::before {
+  background-image: url("../img/month-arrow-left.svg");
+  opacity: 0.4;
+}
+
+.calendar__btn-next::before {
+  right: 0;
+
+  background-image: url("../img/month-arrow-right.svg");
+  opacity: 0.4;
+}
+
+.calendar__name {
+  margin: 10px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .calendar {
+    order: 6;
+  }
+
+  .calendar__name {
+    margin: 26px 0 20px 0;
+
+    font-size: 36px;
+  }
+
+  .calendar__wrapper {
+    margin-bottom: 33px;
+  }
+
+  .calendar__btn {
+    width: 15px;
+    height: 28px;
+
+    &::before {
+      margin-top: -14px;
+
+      width: 15px;
+      height: 28px;
+    }
+  }
+
+  .calendar__btn-next {
+    margin-right: 15px;
+  }
+
+  .calendar__btn-previous {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .calendar {
+    margin-top: 33px;
+  }
+
+  .calendar__wrapper {
+    margin-bottom: 12px;
+  }
+
+  .calendar__btn {
+    width: 18px;
+    height: 34px;
+
+    &::before {
+      margin-top: -17px;
+
+      width: 18px;
+      height: 34px;
+    }
+  }
+
+  .calendar__btn-previous {
+    margin-left: -4px;
+  }
+
+  .calendar__btn-next {
+    margin-right: 0;
+  }
+}

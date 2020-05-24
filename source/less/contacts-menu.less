@@ -3,8 +3,12 @@
   text-transform: uppercase;
 }
 
+.contacts-menu--close {
+  display: none;
+}
+
 .contacts-menu__item {
-  line-height: 50px;
+  line-height: 45px;
 }
 
 .contacts-menu__link {
@@ -16,7 +20,7 @@
 .contacts-menu__link-icon {
   width: 45px;
   height: 45px;
-  margin-right: 24px;
+  margin-right: 15px;
   background-color: @dark-blue-grey-two;
   border-radius: 50%;
   fill: @light-gold;
@@ -26,15 +30,43 @@
 .contacts-menu__icon {
   width: 18px;
   height: 18px;
+  margin-top: 14px;
 }
 
 .contacts-menu__link--yellow {
   color: @light-gold;
+
+  &:hover .contacts-menu__icon {
+    fill: @mango-two;
+  }
+
+  &:hover span {
+    color: @mango-two;
+  }
+
+  &:focus .contacts-menu__icon {
+    fill: @mango-two;
+  }
+
+  &:focus span {
+    color: @mango-two;
+  }
+
+
+  &:active .contacts-menu__icon {
+    fill: @mango-two-30;
+  }
+
+  &:active span {
+    color: @mango-two-30;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .contacts-menu {
     width: auto;
+    margin-top: 137px;
+    margin-left: 99px;
   }
 
   .contacts-menu__link-icon {
@@ -51,11 +83,25 @@
 
 
 @media (min-width: @desktop-width) {
+  .contacts-menu--close {
+    display: block;
+  }
+
   .contacts-menu--header {
     display: none;
   }
 
   .contacts-menu--footer {
     display: flex;
+  }
+
+  .contacts-menu__item--email {
+    margin-left: 121px;
+  }
+
+  .contacts-menu__link-icon {
+    width: 90px;
+    height: 90px;
+    line-height: 97px;
   }
 }

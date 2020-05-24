@@ -18,6 +18,7 @@
     position: relative;
     min-height: 600px;
     background-image: none;
+    border-radius: 0 0 60px 60px;
 
     &::before {
       content: "";
@@ -37,16 +38,25 @@
 
 @media (min-width: @desktop-width) {
   .about {
-    min-height: 700px;
+    min-height: 751px;
     margin-top: -30px;
     padding-top: 100px;
+    border-radius: 0 0 60px 60px;
+
 
     &::before {
       width: 213px;
+      left: 60px;
+      top: 69px;
     }
   }
 
   .about__content {
-    padding-left: 132px;
+    padding-left: 133px;
+    padding-right: 660px;
+  }
+
+  .about__content-title {
+    margin-bottom: 33px;
   }
 }

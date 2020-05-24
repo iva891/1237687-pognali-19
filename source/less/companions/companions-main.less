@@ -22,6 +22,11 @@
   }
 }
 
+.companions-main__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .companions-main__title {
   position: relative;
   width: 270px;
@@ -35,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: -7px;
 }
 
 .companions-main__item {
@@ -62,6 +68,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus * {
+    opacity: 0.6;
+  }
+
+  &:active * {
+    opacity: 0.3;
+  }
 }
 
 .companions-main__nav {
@@ -73,7 +88,12 @@
 
 @media (min-width: @tablet-width) {
   .companions-main__title-wrapper {
-    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 160px;
+    border-radius: 0 0 60px 60px;
+
 
     &::after {
       bottom: -4px;
@@ -81,6 +101,40 @@
       width: 287px;
       height: 8px;
     }
+  }
+
+  .companions-main__return-wrapper {
+    display: flex;
+    margin-right: 75px;
+
+    &:hover,
+    &:focus {
+      color: @white-60;
+    }
+
+    &:active .companions-main__return-text {
+      color: @white-30;
+    }
+
+    &:hover,
+    &:focus .companions-main__return-icon {
+      opacity: 0.6;
+    }
+
+    &:active .companions-main__return-icon {
+      opacity: 0.3;
+    }
+  }
+
+  .companions-main__return-text {
+    text-transform: uppercase;
+  }
+
+  .companions-main__return-icon {
+    width: 32px;
+    height: 16px;
+    margin-left: 29px;
+    fill: @white-four;
   }
 
   .companions-main__title {
@@ -96,16 +150,45 @@
   .companions-main__item {
     margin-top: 40px;
   }
+
+  .companions-main__nav {
+    margin-top: 53px;
+    margin-bottom: 90px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .companions-main__title-wrapper {
+    min-height: 252px;
+
     &::after {
       left: 126px;
     }
   }
 
   .companions-main__title {
+    margin-top: 112px;
     margin-left: 126px;
+  }
+
+  .companions-main__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 53px;
+    padding-left: 50px;
+  }
+
+  .companions-main__item {
+    margin-top: 32px;
+  }
+
+  .companions-main__nav {
+    margin-top: 67px;
+    margin-left: 59px;
+  }
+
+  .companions-main__show-more {
+    margin-top: 64px;
+    margin-left: -440px;
   }
 }

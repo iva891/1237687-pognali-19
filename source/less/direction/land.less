@@ -1,0 +1,46 @@
+.land {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+
+    width: 71px;
+    height: 48px;
+
+    background-repeat: no-repeat;
+
+    transform: scale(0.5);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: -3px;
+    left: 50%;
+
+    display: none;
+    margin-left: 8px;
+    width: 0;
+    height: 0;
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid @dark-blue-grey-three;
+  }
+
+  &--tooltip {
+    cursor: pointer;
+  }
+}
+
+.land--czech::before {
+  background-image: url("../img/flag-czech.svg");
+}
+
+.land--bosnia::before {
+  background-image: url("../img/flag-bosnia.svg");
+}

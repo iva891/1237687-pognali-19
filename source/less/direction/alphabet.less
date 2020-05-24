@@ -1,0 +1,108 @@
+.alphabet {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alphabet__link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44.5px;
+  height: 42px;
+  margin-top: -1px;
+  margin-left: -1px;
+
+  border: solid 1px @cloudy-blue;
+}
+
+.alphabet__item {
+  &:nth-child(5n) .alphabet__link {
+    margin-right: -2px;
+    border-right-width: 0;
+  }
+
+  &--selected .alphabet__link {
+    color: @white-four;
+    background-color: @dark-slate-blue;
+  }
+
+  &:hover:not(.alphabet__item--selected) .alphabet__link,
+  &:focus:not(.alphabet__item--selected) .alphabet__link {
+    z-index: 1;
+    border: solid 1px @bluey-grey;
+  }
+
+  &:active:not(.alphabet__item--selected) .alphabet__link {
+    color: @white-four;
+
+    border-color: @dark-slate-blue;
+    background-color: @dark-slate-blue;
+  }
+
+  &:nth-child(5n):hover:not(.alphabet__item--selected) .alphabet__link,
+  &:nth-child(5n):focus:not(.alphabet__item--selected) .alphabet__link,
+  &:nth-child(5n):active:not(.alphabet__item--selected) .alphabet__link {
+    width: 46px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .alphabet {
+    width: 369px;
+    padding: 35px 25px 95px 25px;
+
+    border-right: 1px solid @pale-grey;
+  }
+
+  .alphabet__item {
+    &:nth-child(5n) .alphabet__link {
+      margin-right: 0;
+      border-right-width: 1px;
+    }
+
+    &:nth-child(5n):hover:not(.alphabet__item--selected) .alphabet__link,
+    &:nth-child(5n):focus:not(.alphabet__item--selected) .alphabet__link,
+    &:nth-child(5n):active:not(.alphabet__item--selected) .alphabet__link {
+      width: 54px;
+    }
+  }
+
+  .alphabet__link {
+    width: 54px;
+    height: 70px;
+
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .alphabet {
+    width: 480px;
+    padding: 35px 25px 20px 25px;
+  }
+
+  .alphabet__item {
+    margin-bottom: 15px;
+
+    &:not(:nth-child(5n)) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(5n):hover:not(.alphabet__item--selected) .alphabet__link,
+    &:nth-child(5n):focus:not(.alphabet__item--selected) .alphabet__link,
+    &:nth-child(5n):active:not(.alphabet__item--selected) .alphabet__link {
+      width: 60px;
+    }
+  }
+
+  .alphabet__link {
+    width: 60px;
+
+    border-radius: 4px;
+  }
+}

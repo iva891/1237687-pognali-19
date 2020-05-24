@@ -7,9 +7,21 @@
   padding-bottom: 22px;
   padding-left: 18px;
   padding-right: 20px;
-  background: linear-gradient(white, white 168px, @pale-grey 168px, @pale-grey 170px, white 170px, white 200px, transparent 200px, transparent),
-    linear-gradient(to top, white, white 144px, @pale-grey 144px, @pale-grey 146px, white 146px, white);
+  background: linear-gradient(white, white 157px, @pale-grey 157px, @pale-grey 159px, white 159px, white 200px, transparent 200px, transparent),
+    linear-gradient(to top, white, white 133px, #edeff6 133px, #edeff6 135px, white 135px, white);
   border-radius: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.user-card:hover .user-card__image,
+.user-card:focus .user-card__image,
+.user-card:active .user-card__image {
+  transform: scale(1.05) translateY(-7px);
 }
 
 .user-card__header {
@@ -29,12 +41,25 @@
 .user-card__image-picture {
   width: 70px;
   height: 70px;
+
+  overflow: hidden;
 }
 
 .user-card__title {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  cursor: pointer;
+}
+
+.user-card__title:hover,
+.user-card__title:focus {
+  opacity: 0.7;
+}
+
+.user-card__title:active {
+  opacity: 0.3;
 }
 
 .user-card__tags {
@@ -63,10 +88,28 @@
   height: 31px;
   background-color: @pale-grey;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: @pale-grey-four;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .user-card__like--active {
   background-color: @very-light-pink-two;
+
+  &:hover,
+  &:focus {
+    background-color: @light-tan;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .user-card__heart {
@@ -88,7 +131,9 @@
 }
 
 .user-card__country {
+  min-height: 110px;
   margin-left: 7px;
+  margin-top: -10px;
 }
 
 .user-card__title-text {
@@ -101,7 +146,7 @@
 .user-card__transfer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: -4px;
   margin-left: 7px;
 }
 
@@ -154,7 +199,6 @@
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -167,7 +211,7 @@
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 25px;
-    background: linear-gradient(white, white 253px, @pale-grey 253px, @pale-grey 255px, white 255px, white);
+    background: linear-gradient(white, white 243px, #edeff6 243px, #edeff6 244px, white 244px, white);
   }
 
   .user-card__header {
@@ -278,6 +322,7 @@
 
 
   .user-card__country {
+    min-height: 95px;
     margin-left: 0;
     order: 1;
   }

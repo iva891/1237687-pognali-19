@@ -6,6 +6,21 @@
   border-radius: 25px;
   text-transform: uppercase;
   line-height: 50px;
+
+  &:hover:not(.button--filter):not(.button--grey):not(.button--direction):not(.button--header):not(.button--user-card) {
+    background-color: @dark-blue-grey;
+    color: @white-four;
+  }
+
+  &:focus:not(.button--filter):not(.button--grey):not(.button--direction):not(.button--header):not(.button--user-card) {
+    background-color: @dark-blue-grey;
+    color: @white-four;
+  }
+
+  &:active:not(.button--filter):not(.button--grey):not(.button--direction):not(.button--header):not(.button--user-card) {
+    background-color: @dark-blue-grey;
+    color: @white-30;
+  }
 }
 
 .button--square {
@@ -14,7 +29,7 @@
   align-items: center;
   min-height: 62px;
   padding-left: 24px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-transform: none;
   line-height: 62px;
   text-align: left;
@@ -23,8 +38,97 @@
 .button--user-card {
   width: 148px;
   min-height: 50px;
+
+  &:hover,
+  &:focus {
+    background-color: @mango-two;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+}
+
+.button--user-call {
+  width: 230px;
+  min-height: 40px;
+  line-height: 40px;
 }
 
 .button--route {
   border: 2px solid @dark-blue-grey;
+}
+
+.button--filter {
+  width: 230px;
+  min-height: 40px;
+  margin-left: -10px;
+  margin-right: auto;
+  line-height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: @white-four;
+
+  &:active {
+    background-color: @macaroni-and-cheese;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+}
+
+.button--grey {
+  width: 270px;
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 20px;
+  background-color: @pale-grey-two;
+}
+
+.button--direction {
+  width: 230px;
+  min-height: 40px;
+  border: none;
+  border-radius: 20px;
+
+  &-back {
+    background-color: transparent;
+  }
+
+  &:hover:not(.button--direction-back),
+  &:focus:not(.button--direction-back) {
+    background-color: @mango-two;
+  }
+
+  &:active:not(.button--direction-back) * {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button--filter {
+    width: 618px;
+    min-height: 50px;
+    border-radius: 25px;
+
+    font-size: 20px;
+  }
+
+  .button--grey {
+    width: 618px;
+    min-height: 60px;
+  }
+
+  .button--login {
+    width: 189px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--filter {
+    width: 196px;
+  }
 }

@@ -8,11 +8,22 @@
 }
 
 .login-input__email {
-  height: 62px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
+  size: 100%;
   padding-left: 24px;
   border: 1px solid @white-four;
   border-radius: 10px 0 0 10px;
+
+  &:hover {
+    background-color: @pale-grey;
+  }
+
+  &:focus {
+    background-color: #000000;
+    color: @white-four;
+    border: none;
+  }
 }
 
 .login-input__email::placeholder {
@@ -39,6 +50,13 @@
 @media (min-width: @tablet-width) {
   .login-input {
     width: 618px;
+    min-height: 80px;
+    border-radius: 20px;
+  }
+
+  .login-input__button {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -49,6 +67,7 @@
 
   .login-input__button {
     width: 325px;
+    padding-left: 51px;
     background-position: center right 50px;
   }
 

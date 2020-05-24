@@ -1,0 +1,35 @@
+.countries-by-letter {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.countries-by-letter__link {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: black;
+
+  &:hover,
+  &:focus {
+    color: @dark-slate-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .countries-by-letter {
+    padding: 30px 25px;
+  }
+
+  .countries-by-letter__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

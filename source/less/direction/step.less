@@ -1,0 +1,180 @@
+.step {
+  position: relative;
+
+  padding: 23px 25px 19px 25px;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+  background-color: @white-four;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.step__header {
+  width: 140px;
+  margin: 0 0 10px 0;
+}
+
+.step__note {
+  margin: 0 0 22px 0;
+}
+
+.step__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: -5px;
+}
+
+.step__button--back:hover,
+.step__button--back:focus {
+  opacity: 0.7;
+}
+
+.step__button--back:active {
+  opacity: 0.3;
+}
+
+.step__button-arrow {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .step {
+    padding: 50px 45px 57px 45px;
+    margin-bottom: 40px;
+
+    border-radius: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .step__header {
+    width: 250px;
+    margin: 0 0 40px 0;
+
+    font-size: 36px;
+  }
+
+  .step__note {
+    padding-bottom: 35px;
+    padding-right: 10px;
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    border-bottom: 1px solid @light-blue-grey-two;
+
+    &--two {
+      margin: 0;
+    }
+
+    &--three {
+      border: none;
+      padding-right: 5px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .step__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .step__button {
+    order: 7;
+
+    justify-content: space-between;
+
+    padding: 0 0 0 35px;
+    width: 285px;
+    height: 80px;
+
+    font-size: 24px;
+    line-height: 1;
+    text-transform: none;
+    text-align: left;
+
+    border-radius: 20px;
+
+    &::after {
+      display: block;
+    }
+
+    &--no-bg {
+      padding-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      margin-right: -5px;
+
+      text-align: right;
+    }
+  }
+
+  .step__button-arrow {
+    display: block;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .step__button-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .step {
+    position: relative;
+
+    padding: 100px 160px 105px 160px;
+    margin-bottom: 45px;
+
+    border-radius: 60px;
+  }
+
+  .step__header {
+    width: auto;
+  }
+
+  .step__note {
+    padding-bottom: 53px;
+    padding-right: 405px;
+    margin-bottom: 53px;
+
+    &--two {
+      padding-right: 580px;
+      margin-bottom: 0;
+    }
+
+    &--three {
+      padding-right: 520px;
+      margin-bottom: 75px;
+
+      border-bottom: 1px solid @light-blue-grey-two;
+    }
+  }
+
+  .step__button {
+    &--no-bg {
+      margin-right: 0;
+    }
+  }
+
+  .step__button-wrapper {
+    &--route {
+      width: 1000px;
+      position: absolute;
+      bottom: 105px;
+    }
+  }
+}

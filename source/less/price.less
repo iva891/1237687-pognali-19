@@ -23,56 +23,100 @@
 .price__title {
   position: relative;
   width: 110px;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 50px;
+  margin-left: 0;
 }
 
 .price__wrapper::after {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 37px;
   right: 7.8%;
   width: 99px;
   height: 99px;
   background-image: url("../img/rates@1x.png");
   background-size: 100%;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
     background-image: url("../img/rates@2x.png");
   }
 }
 
 .price__show-business {
-  margin-top: 31px;
+  margin-top: 35px;
   margin-bottom: 38px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
+  cursor: pointer;
+}
+
+.price__show-business:hover,
+.price__show-business:focus {
+  opacity: 0.7;
+}
+
+.price__show-business:active {
+  opacity: 0.3;
+}
+
+
+.price__show-business-icon {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .price__wrapper {
     padding-left: 5.2%;
     padding-right: 5.2%;
+    border-radius: 0 0 60px 60px;
 
     &::after {
       top: 400px;
       right: 80px;
       z-index: 2;
     }
+  }
 
-    .price__title-wrapper {
-      width: auto;
-    }
+  .price__title-wrapper {
+    margin-top: 18px;
+    width: auto;
+  }
 
-    .price__title {
-      width: auto;
-    }
+  .price__title {
+    width: auto;
+  }
+
+  .price__list {
+    margin-top: 68px;
   }
 
   .price__show-business {
-    margin-top: 60px;
-    margin-left: 130px;
-    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 65px;
+  }
+
+  .price__show-business-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: @pale-grey-four;
+    border-radius: 50%;
+  }
+
+  .price__show-business-icon {
+    display: block;
+    width: 17px;
+    height: 21px;
+    fill: @light-navy;
+  }
+
+  .price__show-business-text {
+    margin-left: 23px;
   }
 }
 
@@ -85,8 +129,21 @@
     &::after {
       width: 198px;
       height: 198px;
-      top: 186px;
-      right: 130px;
+      top: 282px;
+      right: 116px;
     }
+  }
+
+  .price__title-wrapper {
+    margin-top: 30px;
+    margin-left: 348px;
+  }
+
+  .price__list {
+    margin-top: 130px;
+  }
+
+  .price__show-business {
+    margin-bottom: 163px;
   }
 }

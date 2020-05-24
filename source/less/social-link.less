@@ -3,6 +3,10 @@
   justify-content: space-between;
 }
 
+.social-link--close {
+  display: none;
+}
+
 .social-link--header {
   width: 105px;
 }
@@ -39,11 +43,25 @@
   background-repeat: no-repeat;
   fill: @dark-slate-blue;
   background-color: @light-gold;
+
+  &:hover,
+  &:focus {
+    background-color: @mango-two;
+  }
+
+  &:active .social-link__icon {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social-link {
     width: 139px;
+  }
+
+  .social-link__link--footer {
+    width: 60px;
+    height: 60px;
   }
 
   .social-link--header {

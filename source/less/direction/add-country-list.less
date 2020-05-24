@@ -1,0 +1,122 @@
+.add-country-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 168px;
+}
+
+.add-country-list__item {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 20px;
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 165px;
+    top: 49px;
+    z-index: 1;
+
+    width: 5px;
+    height: 10px;
+
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+  }
+}
+
+.add-country-list__item.country-adding--expand:hover button,
+.add-country-list__item.country-adding--expand:focus button {
+  opacity: 1;
+}
+
+.add-country-list__item.country-adding--expand:active button {
+  opacity: 0.1;
+}
+
+.add-country-list__item span {
+  margin-right: -1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 164px;
+    top: 18px;
+    z-index: 2;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: @dark-slate-blue;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+}
+
+.add-country-list__item:last-child span {
+  &::before {
+    background-color: @white-two;
+    border-color: @pale-grey;
+  }
+}
+
+.add-country-list__item:last-child {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-country-list {
+    position: relative;
+
+    padding: 40px 25px 30px 0;
+    width: auto;
+
+    border-right: 1px solid @light-blue-grey-two;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -30px;
+
+      width: 50px;
+      height: 100%;
+
+      background: linear-gradient(to bottom, rgba(@white-four, 0) 70%, @white-four 100%);
+    }
+  }
+
+  .add-country-list__item {
+    margin-bottom: 15px;
+
+    &::before {
+      display: none;
+    }
+
+    & span::after {
+      display: none;
+    }
+
+    & span::before {
+      left: 388px;
+      top: 26px;
+
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-country-list {
+    width: 775px;
+    padding: 65px 45px 65px 0;
+  }
+
+  .add-country-list__item span::before {
+    left: 768px;
+  }
+}
