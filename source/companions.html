@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали. Попутчики</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
+
 
 </head>
 
@@ -118,7 +127,7 @@
 
   <main class="page__main companions-main">
     <div class="companions-main__title-wrapper">
-      <h1 class="companions-main__title first-screen__slogan text-6 first-screen__slogan--left">Попутчики</h1>
+      <h1 class="companions-main__title text-6">Попутчики</h1>
       <a class="companions-main__return-wrapper" href="index.html">
         <span class="companions-main__return-text text-82">На главную</span>
         <svg class="companions-main__return-icon">
@@ -657,19 +666,19 @@
 
                 <ul class="state__country-list">
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
                     </svg>
                     <span class="state__country-text">Шри-Ланка</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-thailand"></use>
                     </svg>
                     <span class="state__country-text">Таиланд</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-seychelles"></use>
                     </svg>
                     <span class="state__country-text">Сейшелы</span>
@@ -719,8 +728,8 @@
                       stroke-dasharray="120 5" stroke-dashoffset="30" />
                   </svg>
                   <p class="user-card__level-text user-card__text text-35">
-                    <span class="user-card__level-text--rus">левел:</span>
-                    <span class="user-card__level-text--eng">level</span></p>
+                    <span class="user-card__level-rus">левел:</span>
+                    <span class="user-card__level-eng">level</span></p>
                   <p class="user-card__level-value text-37">99</p>
                 </div>
               </div>
@@ -787,13 +796,13 @@
 
                 <ul class="state__country-list">
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-belgium"></use>
                     </svg>
                     <span class="state__country-text">Бельгия</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                     <span class="state__country-text">Чехия</span>
@@ -844,8 +853,8 @@
                       stroke-dasharray="90 35" stroke-dashoffset="30" />
                   </svg>
                   <p class="user-card__level-text user-card__text text-35"><span
-                      class="user-card__level-text--rus">левел:</span><span
-                      class="user-card__level-text--eng">level</span></p>
+                      class="user-card__level-rus">левел:</span><span
+                      class="user-card__level-eng">level</span></p>
                   <p class="user-card__level-value text-37">80</p>
                 </div>
               </div>
@@ -912,19 +921,19 @@
 
                 <ul class="state__country-list">
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-usa"></use>
                     </svg>
                     <span class="state__country-text">США</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-australia"></use>
                     </svg>
                     <span class="state__country-text">Австралия</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-dominica"></use>
                     </svg>
                     <span class="state__country-text">Доминика</span>
@@ -974,8 +983,8 @@
                       stroke-dasharray="30 95" stroke-dashoffset="30" />
                   </svg>
                   <p class="user-card__level-text user-card__text text-35"><span
-                      class="user-card__level-text--rus">левел:</span><span
-                      class="user-card__level-text--eng">level</span></p>
+                      class="user-card__level-rus">левел:</span><span
+                      class="user-card__level-eng">level</span></p>
                   <p class="user-card__level-value text-37">25</p>
                 </div>
               </div>
@@ -1040,13 +1049,13 @@
 
                 <ul class="state__country-list">
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-united-kingdom"></use>
                     </svg>
                     <span class="state__country-text">Великобритания</span>
                   </li>
                   <li class="state__country-item text-36">
-                    <svg class="state__flag">
+                    <svg class="state__flag" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-germany"></use>
                     </svg>
                     <span class="state__country-text">Германия</span>
@@ -1096,8 +1105,8 @@
                       stroke-dasharray="62 62" stroke-dashoffset="30" />
                   </svg>
                   <p class="user-card__level-text user-card__text text-35"><span
-                      class="user-card__level-text--rus">левел:</span><span
-                      class="user-card__level-text--eng">level</span></p>
+                      class="user-card__level-rus">левел:</span><span
+                      class="user-card__level-eng">level</span></p>
                   <p class="user-card__level-value text-37">50</p>
                 </div>
               </div>

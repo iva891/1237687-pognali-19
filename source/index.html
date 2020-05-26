@@ -5,7 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
 </head>
 
 <body class="page">
@@ -160,7 +168,7 @@
         </li>
         <li class="road-map__item road-map__item--third">
           <p class="road-map__item-text text-9">
-            Найдите тех, кто&nbsp;похож&nbsp;на вас
+            Находите тех, кто&nbsp;похож&nbsp;на вас
           </p>
         </li>
         <li class="road-map__item road-map__item--fourth">
@@ -175,11 +183,11 @@
       <section class="main__about-service about">
         <div class="about__content lead lead--about-service">
           <h2 class="lead__title about__content-title text-11">О сервисе</h2>
-          <p class="lead__base-text text-7">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с
+          <p class="lead__base-text text-7">Любое путешествие веселее с&nbsp;попутчиками, которые на&nbsp;одной&nbsp;волне с
             тобой!
             Делитесь
-            своими идеями путешествий и черпайте вдохновение в чужих. </p>
-          <p class="lead__additional-text text-8">А если найдете кого-то близкого по духу — скорее зовите в совместный
+            своими идеями путешествий и&nbsp;черпайте вдохновение в чужих. </p>
+          <p class="lead__additional-text text-8">А если найдете кого-то близкого по духу — скорее&nbsp;зовите&nbsp;в&nbsp;совместный
             трип!
           </p>
           <a href="#" class="lead__show-details text-16 button button--square">
@@ -206,7 +214,7 @@
             <div class="country__item country__item--thailand">
               <div class="country__item-wrapper">
                 <div class="country__item-text">
-                  <svg class="country__flag">
+                  <svg class="country__flag" viewBox="0 0 70 47">
                     <use xlink:href="img/sprite.svg#flag-thailand"></use>
                   </svg>
                   <h3 class="country__title text-13">Тайланд</h3>
@@ -226,7 +234,7 @@
             <div class="country__item country__item--france">
               <div class="country__item-wrapper">
                 <div class="country__item-text">
-                  <svg class="country__flag">
+                  <svg class="country__flag" viewBox="0 0 70 47">
                     <use xlink:href="img/sprite.svg#flag-france"></use>
                   </svg>
                   <h3 class="country__title text-13">Франция</h3>
@@ -246,7 +254,7 @@
             <div class="country__item country__item--czech">
               <div class="country__item-wrapper country__item-wrapper--czech">
                 <div class="country__item-text">
-                  <svg class="country__flag">
+                  <svg class="country__flag" viewBox="0 0 70 47">
                     <use xlink:href="img/sprite.svg#flag-czech"></use>
                   </svg>
                   <h3 class="country__title text-13">Чехия</h3>
@@ -277,7 +285,7 @@
         <div class="people__wrapper-without-button">
           <div class="people__content lead">
             <h2 class="lead__title people__content-title text-11">Попутчики</h2>
-            <p class="lead__base-text text-7">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+            <p class="lead__base-text lead__base-text--people text-7">Все мы индивидуальны и&nbsp;у&nbsp;каждого свой взгляд на идеальный отдых. Одному
               нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
             <p class="lead__additional-text text-8">Теперь можно легко <br class="lead__line-break">найти
               единомышленников!</p>
@@ -294,9 +302,9 @@
               </picture>
 
               <div class="person__wrapper">
-                <svg class="person__rating-bar" width="65" height="65">
-                  <circle r="31" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="4"
-                    stroke-dasharray="180 10" stroke-dashoffset="45" />
+                <svg class="person__rating-bar" width="60" height="60">
+                  <circle r="28" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="3"
+                    stroke-dasharray="180 10" stroke-dashoffset="55"/>
                 </svg>
                 <div class="person__rating">
                   <p class="person__level-value text-17">99</p>
@@ -306,21 +314,21 @@
                 <ul class="person__wish-list place">
                   <li class="place__tooltip tooltip">
                     <span class="tooltip__text text-82">Шри&#8209;Ланка</span>
-                    <svg class="place__item">
+                    <svg class="place__item" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
                     </svg>
                     <span class="visually-hidden">Шри-Ланка</span>
                   </li>
                   <li class="place__tooltip tooltip">
                     <span class="tooltip__text text-82">Таиланд</span>
-                    <svg class="place__item">
+                    <svg class="place__item" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-thailand"></use>
                     </svg>
                     <span class="visually-hidden">Таиланд</span>
                   </li>
                   <li class="place__tooltip tooltip">
                     <span class="tooltip__text text-82">Сейшелы</span>
-                    <svg class="place__item">
+                    <svg class="place__item" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-seychelles"></use>
                     </svg>
                     <span class="visually-hidden">Сейшелы</span>
@@ -380,7 +388,7 @@
 
               <div class="person__wrapper">
                 <svg class="person__rating-bar" width="65" height="65">
-                  <circle r="31" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="4"
+                  <circle r="28" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="3"
                     stroke-dasharray="150 40" stroke-dashoffset="45" />
                 </svg>
                 <div class="person__rating">
@@ -391,14 +399,14 @@
                 <ul class="person__wish-list place">
                   <li class="place__tooltip tooltip">
                     <span class="tooltip__text text-82">Бельгия</span>
-                    <svg class="place__item">
+                    <svg class="place__item" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-belgium"></use>
                     </svg>
                     <span class="visually-hidden">Бельгия</span>
                   </li>
                   <li class="place__tooltip tooltip">
                     <span class="tooltip__text text-82">Чехия</span>
-                    <svg class="place__item">
+                    <svg class="place__item" viewBox="0 0 70 47">
                       <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                     <span class="visually-hidden">Чехия</span>
@@ -460,7 +468,7 @@
     <section class="main__cost price">
       <div class="price__wrapper">
         <div class="price__title-wrapper center">
-          <h2 class="price__title lead__title text-11">Добавьте свой профиль</h2>
+          <h2 class="price__title text-11">Добавьте свой профиль</h2>
         </div>
 
         <ol class="price__list tariff">
@@ -521,7 +529,7 @@
             <span class="visually-hidden">отправить</span></button>
         </form>
 
-        <p class="registration__text lead__base-text text-7 lead__base-text--center">Остались вопросы?
+        <p class="registration__text text-7">Остались вопросы?
           Мы&nbsp;с&nbsp;радостью&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
         <ul class="registration__contacts contacts-menu contacts-menu--footer text-26">

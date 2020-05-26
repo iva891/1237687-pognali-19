@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Погнали</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
+
 </head>
 
 <body class="page">
@@ -16,7 +25,7 @@
 
     <div class="header__wrapper center">
       <div class="header__logo logo">
-        <a href="index.html" class="logo__link">
+        <a href="#" class="logo__link">
           <picture class="logo__image">
             <source media="(min-width: 1440px)"
               srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
@@ -34,10 +43,9 @@
 
       <nav class="header__nav page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="index.html" class="page-nav__link text-3" data-hover="О сервисе">О
-              сервисе</a></li>
-          <li class="page-nav__item"><a href="#" class="page-nav__link text-3" data-hover="Направления">Направления</a>
-          </li>
+          <li class="page-nav__item"><a href="#" class="page-nav__link text-3" data-hover="О сервисе">О сервисе</a></li>
+          <li class="page-nav__item"><a href="direction.html" class="page-nav__link text-3"
+              data-hover="Направления">Направления</a></li>
           <li class="page-nav__item"><a href="companions.html" class="page-nav__link text-3"
               data-hover="Попутчики">Попутчики</a></li>
         </ul>
@@ -128,9 +136,8 @@
         <form class="profile__form profile-data" action="http://echo.htmlacademy.ru" method="post">
           <div class="profile-data__level-photo-wrapper">
             <div class="profile-data__level level">
-              <svg class="user-card__circle-bar user-card__circle-bar--direction" viewBox="0 0 48 48">
-                <circle r="20" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="4" stroke-dasharray="90 35"
-                  stroke-dashoffset="30"></circle>
+              <svg class="level__circle-bar" viewBox="0 0 48 48">
+                <circle r="22" cx="50%" cy="50%" fill="none" stroke="#ff8d30" stroke-width="2" stroke-dasharray="90 25" stroke-dashoffset="10"></circle>
               </svg>
               <p class="level__number text-40">80</p>
               <p class="level__text text-41">level</p>
@@ -351,7 +358,7 @@
               </li>
             </ul>
             <h3 class="step__header text-33">Шаг 2. Маршрут</h3>
-            <p class="step__note text-43 step__note--two">Укажите страны, которые вы хотели по посетить. Это может быть
+            <p class="step__note text-43 step__note--two">Укажите страны, которые вы хотели посетить. Это может быть
               одна или сразу несколько.</p>
             <div class="route-step__countries-wrapper">
               <ul class="route-step__list add-country-list">

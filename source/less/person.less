@@ -67,16 +67,17 @@
   position: absolute;
   top: -252px;
   left: 16px;
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   background-color: @black-60;
   border-radius: 50%;
 }
 
 .person__rating-bar {
   position: absolute;
-  top: -254px;
-  left: 13px;
+  top: -253px;
+  left: 16px;
+  z-index: 2;
 }
 
 .person__level-value {
@@ -117,11 +118,24 @@
 
   .person__wrapper {
     min-height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .person__title {
     bottom: 124px;
+    top: 290px;
     font-size: 24px;
+  }
+
+  .person__rating {
+    top: -264px;
+    left: 20px;
+  }
+
+  .person__rating-bar {
+    top: -266px;
+    left: 20px;
   }
 
   .person__tag-cloud {
@@ -130,6 +144,6 @@
   }
 
   .person__cargo {
-    margin-top: 35px;
+    margin-top: 26px;
   }
 }
